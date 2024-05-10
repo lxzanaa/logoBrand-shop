@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    max-width: 1180px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header__active {
+    color: #1E2832;
+    border-color: #1E2832;
+}
+.btn__hover:hover{
+    color: #1E2832;
+    background-color: transparent;
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+.btn__hover{
+    transform: scale(1);
+    transition: 0.3s;
+}
+.btn__hover:active{
+    opacity: 0.5;
+}
