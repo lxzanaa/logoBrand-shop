@@ -128,3 +128,12 @@ img {
 .gallery-controls-next {
     position: relative;
 }
+
+.img-animation:hover {
+    transform: translateY(-7px);
+  }
+  
+  .img-animation {
+    transform: translateY(0px);
+    transition: all 0.3s linear;
+  }
