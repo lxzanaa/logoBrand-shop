@@ -7,16 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
   <header id="header" class="py-6">
-    <div class="container flex justify-between">
+    <div class="max-w-[1180px] mx-auto px-5 w-full  flex justify-between">
       <a class="text-[#1E2832] font-sans font-bold text-2xl leading-[32.68px] flex items-center"
         href="index.html">LogoBrand</a>
       <div class="flex items-center">
-        <ul class="flex gap-14 items-center">
+        <ul class="hidden gap-14 items-center lg:flex">
           <li><a
               class="header__active text-[#1E283280] font-sans font-semibold text-base leading-[21.79px] border-b-[2px] pb-1 border-transparent"
               href="#">Home</a></li>
@@ -33,10 +34,17 @@
       </div>
       <div class="flex items-center gap-8 relative">
 
-        <div class="flex items-center gap-0 relative">
+        <div class="flex items-center gap-0 relative active:opacity-80" id="search-button">
           <input name="search-input" type="text" id="search-input" placeholder="Search..."
-            class="text-[#8A8A8A] font-sans text-base leading-7 absolute left-[-130px] hidden w-40 outline-none -z-20 border py-2 pl-3 pr-8 rounded-2xl">
-          <button class="flex items-center gap-5" id="search-button">
+            class="text-[#8A8A8A] font-sans text-base leading-7 absolute left-[-110px] hidden w-36 outline-none -z-20 border py-2 pl-3 pr-8 rounded-2xl">
+          <svg  class="md:hidden block" width="27" height="27" viewBox="0 0 27 27" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M17.4375 15.75H16.5488L16.2338 15.4463C17.3744 14.1233 18.0012 12.4343 18 10.6875C18 9.24123 17.5711 7.82743 16.7676 6.6249C15.9641 5.42236 14.8221 4.4851 13.4859 3.93163C12.1497 3.37817 10.6794 3.23336 9.2609 3.51551C7.84242 3.79767 6.53946 4.49411 5.51678 5.51678C4.49411 6.53946 3.79767 7.84242 3.51551 9.2609C3.23336 10.6794 3.37817 12.1497 3.93163 13.4859C4.4851 14.8221 5.42236 15.9641 6.6249 16.7676C7.82743 17.5711 9.24123 18 10.6875 18C12.4988 18 14.1638 17.3363 15.4463 16.2338L15.75 16.5488V17.4375L21.375 23.0513L23.0513 21.375L17.4375 15.75ZM10.6875 15.75C7.88625 15.75 5.625 13.4888 5.625 10.6875C5.625 7.88625 7.88625 5.625 10.6875 5.625C13.4888 5.625 15.75 7.88625 15.75 10.6875C15.75 13.4888 13.4888 15.75 10.6875 15.75Z"
+              fill="#1E2832" />
+          </svg>
+
+          <button class="md:flex hidden items-center gap-4" >
             <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M17.4375 15.75H16.5488L16.2338 15.4463C17.3744 14.1233 18.0012 12.4343 18 10.6875C18 9.24123 17.5711 7.82743 16.7676 6.6249C15.9641 5.42236 14.8221 4.4851 13.4859 3.93163C12.1497 3.37817 10.6794 3.23336 9.2609 3.51551C7.84242 3.79767 6.53946 4.49411 5.51678 5.51678C4.49411 6.53946 3.79767 7.84242 3.51551 9.2609C3.23336 10.6794 3.37817 12.1497 3.93163 13.4859C4.4851 14.8221 5.42236 15.9641 6.6249 16.7676C7.82743 17.5711 9.24123 18 10.6875 18C12.4988 18 14.1638 17.3363 15.4463 16.2338L15.75 16.5488V17.4375L21.375 23.0513L23.0513 21.375L17.4375 15.75ZM10.6875 15.75C7.88625 15.75 5.625 13.4888 5.625 10.6875C5.625 7.88625 7.88625 5.625 10.6875 5.625C13.4888 5.625 15.75 7.88625 15.75 10.6875C15.75 13.4888 13.4888 15.75 10.6875 15.75Z"
@@ -44,9 +52,13 @@
             </svg>
             Search
           </button>
-        </div>
 
-        <a class="flex items-center gap-8 hover:opacity-80" href="#">
+        </div>
+        <button id="mobile-menu-toggle" class="md:hidden block cursor-pointer active:opacity-75">
+          <i class="fa-solid fa-bars flex"></i>
+        </button>
+
+        <a class="md:flex hidden items-center gap-8 hover:opacity-80 " href="#">
           <span>
             <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -56,14 +68,44 @@
           </span>
           Cart</a>
         <button
-          class="btn__hover py-3 px-8 text-white font-sans font-semibold text-lg leading-[26.01px] bg-[#1E2832] inline-flex rounded-3xl border-[#1E2832] border">Get
+          class="btn__hover py-3 px-8 text-white font-sans font-semibold text-lg leading-[26.01px] bg-[#1E2832] md:inline-flex hidden rounded-3xl border-[#1E2832] border">Get
+          started</button>
+      </div>
+
+    </div>
+
+    <div id="mobile-menu" class="h-full py-6 md:hidden hidden fixed top-0 left-0 w-full text-center bg-white px-5 z-20">
+      <div class="flex items-center justify-between mb-32">
+        <a class="text-[#1E2832] font-sans font-bold text-2xl leading-[32.68px] flex items-center"
+          href="index.html">LogoBrand</a>
+        <button id="mobile-menu-close" class="md:hidden block cursor-pointer active:opacity-75">
+          <i class="fa-solid fa-x flex ml-6"></i>
+        </button>
+      </div>
+      <ul class="flex flex-col items-center gap-10">
+        <li><a class="header__active text-[#1E283280] font-sans font-semibold text-base leading-[21.79px]"
+            href="#">Home</a></li>
+        <li><a class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px]" href="#">Products</a></li>
+        <li><a class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px]" href="#">About</a></li>
+        <li><a class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px]" href="#">Contact</a></li>
+      </ul>
+      <div class="mt-40 w-full flex flex-col">
+        <a class="btn__hover py-3 px-8 text-white font-sans font-semibold text-lg leading-[26.01px] bg-[#1E2832] flex gap-3 justify-center rounded-3xl border-[#1E2832] border mb-4"
+          href="#">
+          <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M8.80312 23.625H5.625V10.575L3.57187 5.625H1.125V3.375H5.09063L6.94688 7.875H25.3969L21.375 15.7781C22.3312 15.9281 23.133 16.3687 23.7803 17.1C24.4268 17.8313 24.75 18.6938 24.75 19.6875C24.75 20.775 24.3705 21.7031 23.6115 22.4719C22.8518 23.2406 21.9281 23.625 20.8406 23.625C19.7344 23.625 18.8018 23.2406 18.0427 22.4719C17.283 21.7031 16.9031 20.775 16.9031 19.6875C16.9031 19.3125 16.95 18.9656 17.0437 18.6469C17.1375 18.3281 17.2687 18.0188 17.4375 17.7188L13.7531 17.3812L8.80312 23.625ZM18.9563 15.6094L21.7406 10.125L7.875 10.1531L9.81563 14.7656L18.9563 15.6094ZM7.875 15.4125V21.3469L11.2219 17.1562L8.49375 16.9031L7.875 15.4125ZM20.8125 21.375C21.3 21.375 21.7031 21.2108 22.0219 20.8822C22.3406 20.5545 22.5 20.1562 22.5 19.6875C22.5 19.2 22.3406 18.7969 22.0219 18.4781C21.7031 18.1594 21.3 18 20.8125 18C20.3438 18 19.9455 18.1594 19.6178 18.4781C19.2892 18.7969 19.125 19.2 19.125 19.6875C19.125 20.1562 19.2892 20.5545 19.6178 20.8822C19.9455 21.2108 20.3438 21.375 20.8125 21.375ZM18.9563 15.6094L9.81563 14.7656L18.9563 15.6094Z"
+              fill="currentColor" />
+          </svg> Cart</a>
+        <button
+          class="btn__hover py-3 px-8 text-white font-sans font-semibold text-lg leading-[26.01px] bg-[#1E2832] flex justify-center rounded-3xl border-[#1E2832] border">Get
           started</button>
       </div>
     </div>
   </header>
 
   <section class="relative pt-20 pb-20">
-    <div class="container flex justify-between items-center mb-32">
+    <div class="max-w-[1180px] mx-auto px-5 w-full  flex justify-between items-center mb-32">
       <img class="w-[109.76px] absolute left-0" src="./img/hero/left.png">
       <img class="w-[161.72px] absolute right-0 top-0" src="./img/hero/right.png">
       <div>
@@ -86,7 +128,7 @@
         <img class="max-w-[433px] max-h-[558px]" src="./img/hero/hero.png" alt="hero">
       </div>
     </div>
-    <div class="container">
+    <div class="max-w-[1180px] mx-auto px-5 w-full ">
       <ul class="grid grid-cols-5 items-center justify-between">
         <li>
           <img class="w-48 h-20" src="./img/brand/01.png" alt="logo">
@@ -108,7 +150,7 @@
   </section>
 
   <section class="pt-24 pb-44">
-    <div class="container">
+    <div class="max-w-[1180px] mx-auto px-5 w-full ">
       <h2 class="text-black font-sans font-normal text-5xl leading-[68.09px] text-center mb-8">Or subscribe to the
         newsletter</h2>
       <div class="flex items-center justify-between mb-10">
@@ -493,7 +535,7 @@
   </section>
 
   <section class="pt-[220px] pb-[240px] bg-cover" style="background-image: url(./img/zara/zara-bg.png);">
-    <div class="container w-full flex justify-end">
+    <div class="max-w-[1180px] mx-auto px-5 w-full  flex justify-end">
       <div>
         <img class="w-52 mb-16" src="./img//zara/zara.png" alt="zara logo">
         <p class="max-w-[466px] text-white font-sans font-normal text-2xl leading-9">Lustrous yet understated. The new
@@ -506,7 +548,7 @@
   </section>
 
   <section class="pt-44 pb-28">
-    <div class="container justify-center">
+    <div class="max-w-[1180px] mx-auto px-5 w-full justify-center">
       <h2 class="text-black font-sans font-normal text-5xl leading-[68.09px] text-center mb-8">Best Sellers</h2>
       <div class="flex items-center justify-between mb-10">
         <ul class="flex items-center gap-8">
@@ -765,7 +807,7 @@
   </section>
 
   <footer class="pt-44 pb-28">
-    <div class="container">
+    <div class="max-w-[1180px] mx-auto px-5 w-full">
       <div class="flex items-center justify-between">
         <div>
           <h2 class="text-black font-serif text-3xl leading-[33.6px] mb-8">LogoBrand</h2>
@@ -888,12 +930,25 @@
     const searchInput = document.getElementById('search-input');
 
     searchButton.addEventListener('click', () => {
-      searchInput.classList.toggle('hidden');
-      if (!searchInput.classList.contains('hidden')) {
-        searchInput.focus();
-      }
+        searchInput.classList.toggle('hidden');
+        if (!searchInput.classList.contains('hidden')) {
+            searchInput.focus();
+        }
     });
-  </script>
+
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    const mobileMenuCloseButton = document.getElementById('mobile-menu-close');
+
+    mobileMenuCloseButton.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+    });
+</script>
 </body>
 
 </html>
