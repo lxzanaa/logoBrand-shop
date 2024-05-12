@@ -48,9 +48,6 @@ img {
 }
 
 .gallery-item {
-    max-width: 864px !important;
-    width: 100%;
-    height: 400px !important;
     opacity: 0;
     position: absolute;
     transition: all 0.3s ease-in-out;
@@ -64,8 +61,10 @@ img {
 .gallery-item-1,
 .gallery-item-2,
 .gallery-item-3 {
-    height: 299.07px;
-    width: 646px;
+    max-height: 299.07px;
+    height: 100%;
+    max-width: 646px;
+    width: 100%;
     opacity: 0.8;
     z-index: 1;
 }
