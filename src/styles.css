@@ -4,8 +4,8 @@
 
 
 .header__active {
-    color: #1E2832;
-    border-color: #1E2832;
+    color: #1E2832 !important;
+    border-color: #1E2832 !important;
     
 }
 

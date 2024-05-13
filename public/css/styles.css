@@ -785,9 +785,6 @@ video {
 .border-transparent {
   border-color: transparent;
 }
-.border-b-transparent {
-  border-bottom-color: transparent;
-}
 .bg-\[\#1E2832\] {
   --tw-bg-opacity: 1;
   background-color: rgb(30 40 50 / var(--tw-bg-opacity));
@@ -1056,7 +1053,7 @@ video {
 
 
 .header__active {
-    color: #1E2832;
+    color: #1E2832 !important;
     border-color: #1E2832;
     
 }
