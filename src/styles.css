@@ -6,6 +6,7 @@
 .header__active {
     color: #1E2832;
     border-color: #1E2832;
+    
 }
 
 .btn__hover:hover {
@@ -136,3 +137,35 @@ img {
     transform: translateY(0px);
     transition: all 0.3s linear;
   }
+
+  
+.gallery-item_2 {
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    z-index: 0;
+    border-radius: 15px;
+    background-size: contain;
+    box-shadow: 0 20px 60px 0 rgba(46, 33, 61, 0.08);
+    background: #fff;
+}
+
+.gallery__item-1,
+.gallery__item-2,
+.gallery__item-3 {
+    max-height: 199.07px;
+    height: 100%;
+    max-width: 246px;
+    width: 100%;
+    opacity: 0.8;
+    z-index: 1;
+}
+.gallery__item-3 {
+    transform: scale(1.2) !important;
+    max-width: 364px;
+    width: 100%;
+    opacity: 1;
+    left: 15%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
