@@ -74,7 +74,7 @@
 
     </div>
 
-    <div id="mobile-menu" class="fixed transition-all left-0 bg-white h-full py-6 md:hidden top-0 w-full text-center  px-5 z-20">
+    <div id="mobile-menu" class="fixed transition-all -left-full bg-white h-full py-6 md:hidden top-0 w-full text-center  px-5 z-20">
       <div class="flex items-center justify-between mb-32">
         <a class="text-[#1E2832] font-sans font-bold text-2xl leading-[32.68px] flex items-center"
           href="index.html">LogoBrand</a>
@@ -963,11 +963,11 @@
     const mobileMenuCloseButton = document.getElementById('mobile-menu-close');
 
     mobileMenuToggle.addEventListener("click", function () {
-      mobileMenu.classList.toggle("-left-full");
+      mobileMenu.classList.toggle("left-0");
     });
 
     mobileMenuCloseButton.addEventListener("click", function () {
-      mobileMenu.classList.toggle("-left-full");
+      mobileMenu.classList.toggle("left-0");
     });
   </script>
 </body>
