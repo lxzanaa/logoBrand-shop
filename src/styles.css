@@ -5,8 +5,7 @@
 
 .header__active {
     color: #1E2832 !important;
-    border-color: #1E2832 !important;
-    
+    border-bottom-color: #1E2832 !important;
 }
 
 .btn__hover:hover {
@@ -26,7 +25,7 @@
 }
 
 .filter__active {
-    color: #1E2832;
+    color: #1E2832 !important;
 }
 
 svg,
@@ -168,4 +167,4 @@ img {
     left: 15%;
     transform: translateX(-50%);
     z-index: 2;
-}
+} 

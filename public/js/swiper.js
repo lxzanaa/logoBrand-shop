@@ -42,4 +42,3 @@ const galleryControlsPrevious = document.querySelector('.gallery-controls-previo
 const galleryControlsNext = document.querySelector('.gallery-controls-next');
 
 const exampleCarousel = new Carousel(galleryContainer, galleryItems, galleryControlsPrevious, galleryControlsNext);
-
