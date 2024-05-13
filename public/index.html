@@ -772,7 +772,7 @@
       <p class="text-[#8A8A8A] font-sans font-normal text-base leading-7 text-center mb-16">Lorem ipsum dolor sit amet,
         consectetur adipiscing elit. Scelerisque duis</p>
     </div>
-    <div class="gallery  md:block hidden">
+    <div class="gallery  lg:block hidden">
       <div class="gallery-container flex justify-center">
         <div
           class="gallery-item gallery-item-2 max-w-[864px] w-full max-h-[400px] h-ful flex py-8 px-14 items-center gap-28"
@@ -830,7 +830,7 @@
     </div>
 
 
-    <div class="swiper mySwiper md:hidden block">
+    <div class="swiper mySwiper lg:hidden block">
       <div class="swiper-wrapper">
         <div class="swiper-slide rounded-3xl w-full flex flex-col gap-3 p-4 bg-white">
           <img class=" w-full flex rounded-2xl justify-center" src="./img/customers/woman.png" alt="">
@@ -987,9 +987,24 @@
   <script src="./js/swiper.js"></script>
   <script>
 
-    var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
+      spaceBetween: 10,
       loop: true,
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      },
     });
     const searchButton = document.getElementById('search-button');
     const searchInput = document.getElementById('search-input');
