@@ -773,7 +773,7 @@
         consectetur adipiscing elit. Scelerisque duis</p>
     </div>
     <div class="gallery  md:block hidden">
-      <div class="gallery-container flex flex-wrap justify-center">
+      <div class="gallery-container flex justify-center">
         <div
           class="gallery-item gallery-item-2 max-w-[864px] w-full max-h-[400px] h-ful flex py-8 px-14 items-center gap-28"
           data-index="2">
@@ -832,28 +832,32 @@
 
     <div class="swiper mySwiper md:hidden block">
       <div class="swiper-wrapper">
-        <div class="swiper-slide max-w-[300px] rounded-3xl w-full flex flex-col gap-3 p-4 bg-white">
-          <img class="max-w-[300px] flex rounded-2xl " src="./img/customers/woman.png" alt="">
+        <div class="swiper-slide rounded-3xl w-full flex flex-col gap-3 p-4 bg-white">
+          <img class=" w-full flex rounded-2xl justify-center" src="./img/customers/woman.png" alt="">
           <img class="w-20" src="./img/customers/stars.svg">
-          <h3 class="text-lg" >James K.</h3>
-          <p class="max-w-[300px] font-sans text-sm">"You won't regret it. I would like to personally thank you for your outstanding
-            product. Absolutely
-            wonderful!"</p>
-        </div>
-        <div class="swiper-slide max-w-[300px] rounded-3xl w-full flex flex-col gap-3 p-4 bg-white">
-          <img class="max-w-[300px] flex rounded-2xl " src="./img/customers/girl.webp" alt="girl">
-          <img class="w-20" src="./img/customers/stars.svg">
-          <h3 class="text-lg" >James K.</h3>
-          <p class="max-w-[300px] font-sans text-sm">"You won't regret it. I would like to personally thank you for your outstanding
+          <h3 class="text-lg">James K.</h3>
+          <p class="w-full font-sans text-sm">"You won't regret it. I would like to personally thank you for your
+            outstanding
             product. Absolutely
             wonderful!"</p>
         </div>
 
-        <div class="swiper-slide max-w-[300px] rounded-3xl w-full flex flex-col gap-3 p-4 bg-white">
-          <img class="max-w-[300px] flex rounded-2xl " src="./img/customers/man.png" alt="man">
+        <div class="swiper-slide rounded-3xl w-full flex flex-col gap-3 p-4 bg-white">
+          <img class=" w-full flex rounded-2xl justify-center" src="./img/customers/girl.webp" alt="girl">
           <img class="w-20" src="./img/customers/stars.svg">
-          <h3 class="text-lg" >James K.</h3>
-          <p class="max-w-[300px] font-sans text-sm">"You won't regret it. I would like to personally thank you for your outstanding
+          <h3 class="text-lg">James K.</h3>
+          <p class="w-full font-sans text-sm">"You won't regret it. I would like to personally thank you for your
+            outstanding
+            product. Absolutely
+            wonderful!"</p>
+        </div>
+
+        <div class="swiper-slide rounded-3xl w-full flex flex-col gap-3 p-4 bg-white">
+          <img class=" w-full flex rounded-2xl justify-center" src="./img/customers/man.png" alt="man">
+          <img class="w-20" src="./img/customers/stars.svg">
+          <h3 class="text-lg">James K.</h3>
+          <p class="w-full font-sans text-sm">"You won't regret it. I would like to personally thank you for your
+            outstanding
             product. Absolutely
             wonderful!"</p>
         </div>
@@ -979,13 +983,13 @@
   </section>
 
 
-  <script src="./js/swiper.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/swiper.js"></script>
   <script>
 
     var swiper = new Swiper(".mySwiper", {
-      effect: "cards",
-      grabCursor: true,
+      slidesPerView: 1,
+      loop: true,
     });
     const searchButton = document.getElementById('search-button');
     const searchInput = document.getElementById('search-input');
