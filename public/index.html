@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Zara</title>
+  <link rel="icon" href="./img/zara/logo-icon.jpg" sizes="32x32">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -19,16 +20,16 @@
         href="index.html">LogoBrand</a>
       <div class="flex items-center">
         <ul class="hidden gap-14 items-center lg:flex">
-          <li><a
+          <li><a id="header__link"
               class="header__active text-[#1E283280] font-sans font-semibold text-base leading-[21.79px] border-b-[2px] pb-1 border-b-transparent"
               href="#">Home</a></li>
-          <li><a
+          <li><a id="header__link"
               class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px] border-b-[2px] pb-1 border-b-transparent"
               href="#">Products</a></li>
-          <li><a
+          <li><a id="header__link"
               class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px] border-b-[2px] pb-1 border-b-transparent"
               href="#">About</a></li>
-          <li><a
+          <li><a id="header__link"
               class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px] border-b-[2px] pb-1 border-b-transparent"
               href="#">Contact</a></li>
         </ul>
@@ -85,11 +86,15 @@
         </button>
       </div>
       <ul class="flex flex-col items-center gap-10">
-        <li><a class="header__active text-[#1E283280] font-sans font-semibold text-base leading-[21.79px]"
+        <li><a id="mobile__header"
+            class="header__active text-[#1E283280] font-sans font-semibold text-base leading-[21.79px]"
             href="#">Home</a></li>
-        <li><a class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px]" href="#">Products</a></li>
-        <li><a class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px]" href="#">About</a></li>
-        <li><a class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px]" href="#">Contact</a></li>
+        <li><a id="mobile__header" class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px]"
+            href="#">Products</a></li>
+        <li><a id="mobile__header" class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px]"
+            href="#">About</a></li>
+        <li><a id="mobile__header" class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px]"
+            href="#">Contact</a></li>
       </ul>
       <div class="mt-40 w-full flex flex-col">
         <a class="btn__hover py-3 px-8 text-white font-sans font-semibold text-lg leading-[26.01px] bg-[#1E2832] flex gap-3 justify-center rounded-3xl border-[#1E2832] border mb-4"
@@ -106,7 +111,7 @@
     </div>
   </header>
 
-  <section class="relative md:py-20 py-16">
+  <section class="relative md:py-20 py-10">
     <div class="max-w-[1180px] mx-auto px-5 w-full md:flex justify-between items-center mb-32 gap-5">
       <img class="w-[109.76px] absolute left-0" src="./img/hero/left.png">
       <img class="w-[161.72px] absolute right-0 top-0" src="./img/hero/right.png">
@@ -158,7 +163,7 @@
     </div>
   </section>
 
-  <section class="pt-24 pb-44">
+  <section class="md:pt-24 py-10 md:pb-44 ">
     <div class="max-w-[1180px] mx-auto px-5 w-full ">
       <h2
         class="text-black font-sans font-normal md:text-5xl text-4xl leading-[55px] md:leading-[68.09px] text-center mb-8">
@@ -172,12 +177,15 @@
           <option>Jacket</option>
         </select>
         <ul class="md:flex hidden items-center gap-8">
-          <li
+          <li id="filter__item"
             class="filter__active text-[#00000080] font-sans font-semibold text-base leading-[21.79px] cursor-pointer">
             All Products</li>
-          <li class="text-[#00000080] font-sans font-semibold text-base leading-[21.79px] cursor-pointer">T-Shirt</li>
-          <li class="text-[#00000080] font-sans font-semibold text-base leading-[21.79px] cursor-pointer">Hoodies</li>
-          <li class="text-[#00000080] font-sans font-semibold text-base leading-[21.79px] cursor-pointer">Jacket</li>
+          <li id="filter__item"
+            class="text-[#00000080] font-sans font-semibold text-base leading-[21.79px] cursor-pointer">T-Shirt</li>
+          <li id="filter__item"
+            class="text-[#00000080] font-sans font-semibold text-base leading-[21.79px] cursor-pointer">Hoodies</li>
+          <li id="filter__item"
+            class="text-[#00000080] font-sans font-semibold text-base leading-[21.79px] cursor-pointer">Jacket</li>
         </ul>
         <button
           class="btn__hover inline-flex gap-1 items-center py-1 px-4 text-white bg-[#1E2832] border border-[#1E2832] capitalize">
@@ -191,8 +199,8 @@
           filter</button>
       </div>
 
-      <div class="w-full grid md:grid-cols-3 grid-cols-2 md:gap-14 lg:gap-20 gap-5">
-        <div class="max-w-[367px] w-full  relative ">
+      <div class="w-full grid md:grid-cols-3 grid-cols-2 md:gap-10 lg:gap-20 gap-5">
+        <div class="max-w-[367px] w-full md:border-none border p-2 md:p-0 rounded-xl md:rounded-none relative ">
           <span
             class="absolute top-5 py-1 px-4 text-white font-sans font-semibold text-xs leading-4 bg-[#FF6F61] uppercase z-10">hot
           </span>
@@ -243,14 +251,15 @@
             </div>
           </div>
 
-          <h4 class="text-black font-sans font-semibold text-base leading-5 mb-4">Nike Sportswear Futura Luxe</h4>
+          <h4 class="text-black font-sans font-semibold md:text-base text-sm leading-5 md:mb-4 mb-2">Nike Sportswear
+            Futura Luxe</h4>
           <ul class="flex items-center justify-between">
-            <li class="text-[#00000080] font-sans font-normal text-base leading-[21.79px]">Bag</li>
-            <li class="text-black font-sans font-semibold text-base leading-[21.79px]">$130.00</li>
+            <li class="text-[#00000080] font-sans font-normal text-xs md:text-base leading-[21.79px]">Bag</li>
+            <li class="text-black font-sans font-semibold md:text-base text-xs leading-[21.79px]">$130.00</li>
           </ul>
         </div>
 
-        <div class="max-w-[367px] w-full  relative ">
+        <div class="max-w-[367px] w-full md:border-none border p-2 md:p-0 rounded-xl md:rounded-none relative ">
           <span
             class="absolute top-5 py-1 px-4 text-white font-sans font-semibold text-xs leading-4 bg-[#FF6F61] uppercase z-10">hot
           </span>
@@ -301,14 +310,15 @@
             </div>
           </div>
 
-          <h4 class="text-black font-sans font-semibold text-base leading-5 mb-4">Nike Sportswear Futura Luxe</h4>
+          <h4 class="text-black font-sans font-semibold md:text-base text-sm leading-5 md:mb-4 mb-2">Nike Sportswear
+            Futura Luxe</h4>
           <ul class="flex items-center justify-between">
-            <li class="text-[#00000080] font-sans font-normal text-base leading-[21.79px]">Bag</li>
-            <li class="text-black font-sans font-semibold text-base leading-[21.79px]">$130.00</li>
+            <li class="text-[#00000080] font-sans font-normal text-xs md:text-base leading-[21.79px]">Bag</li>
+            <li class="text-black font-sans font-semibold md:text-base text-xs leading-[21.79px]">$130.00</li>
           </ul>
         </div>
 
-        <div class="max-w-[367px] w-full  relative ">
+        <div class="max-w-[367px] w-full md:border-none border p-2 md:p-0 rounded-xl md:rounded-none relative ">
           <span
             class="absolute top-5 py-1 px-4 text-white font-sans font-semibold text-xs leading-4 bg-[#FF6F61] uppercase z-10">hot
           </span>
@@ -359,14 +369,15 @@
             </div>
           </div>
 
-          <h4 class="text-black font-sans font-semibold text-base leading-5 mb-4">Nike Sportswear Futura Luxe</h4>
+          <h4 class="text-black font-sans font-semibold md:text-base text-sm leading-5 md:mb-4 mb-2">Nike Sportswear
+            Futura Luxe</h4>
           <ul class="flex items-center justify-between">
-            <li class="text-[#00000080] font-sans font-normal text-base leading-[21.79px]">Bag</li>
-            <li class="text-black font-sans font-semibold text-base leading-[21.79px]">$130.00</li>
+            <li class="text-[#00000080] font-sans font-normal text-xs md:text-base leading-[21.79px]">Bag</li>
+            <li class="text-black font-sans font-semibold md:text-base text-xs leading-[21.79px]">$130.00</li>
           </ul>
         </div>
 
-        <div class="max-w-[367px] w-full  relative ">
+        <div class="max-w-[367px] w-full md:border-none border p-2 md:p-0 rounded-xl md:rounded-none relative ">
           <span
             class="absolute top-5 py-1 px-4 text-white font-sans font-semibold text-xs leading-4 bg-[#FF6F61] uppercase z-10">hot
           </span>
@@ -417,14 +428,15 @@
             </div>
           </div>
 
-          <h4 class="text-black font-sans font-semibold text-base leading-5 mb-4">Nike Sportswear Futura Luxe</h4>
+          <h4 class="text-black font-sans font-semibold md:text-base text-sm leading-5 md:mb-4 mb-2">Nike Sportswear
+            Futura Luxe</h4>
           <ul class="flex items-center justify-between">
-            <li class="text-[#00000080] font-sans font-normal text-base leading-[21.79px]">Bag</li>
-            <li class="text-black font-sans font-semibold text-base leading-[21.79px]">$130.00</li>
+            <li class="text-[#00000080] font-sans font-normal text-xs md:text-base leading-[21.79px]">Bag</li>
+            <li class="text-black font-sans font-semibold md:text-base text-xs leading-[21.79px]">$130.00</li>
           </ul>
         </div>
 
-        <div class="max-w-[367px] w-full  relative ">
+        <div class="max-w-[367px] w-full md:border-none border p-2 md:p-0 rounded-xl md:rounded-none relative ">
           <span
             class="absolute top-5 py-1 px-4 text-white font-sans font-semibold text-xs leading-4 bg-[#FF6F61] uppercase z-10">hot
           </span>
@@ -475,14 +487,15 @@
             </div>
           </div>
 
-          <h4 class="text-black font-sans font-semibold text-base leading-5 mb-4">Nike Sportswear Futura Luxe</h4>
+          <h4 class="text-black font-sans font-semibold md:text-base text-sm leading-5 md:mb-4 mb-2">Nike Sportswear
+            Futura Luxe</h4>
           <ul class="flex items-center justify-between">
-            <li class="text-[#00000080] font-sans font-normal text-base leading-[21.79px]">Bag</li>
-            <li class="text-black font-sans font-semibold text-base leading-[21.79px]">$130.00</li>
+            <li class="text-[#00000080] font-sans font-normal text-xs md:text-base leading-[21.79px]">Bag</li>
+            <li class="text-black font-sans font-semibold md:text-base text-xs leading-[21.79px]">$130.00</li>
           </ul>
         </div>
 
-        <div class="max-w-[367px] w-full  relative ">
+        <div class="max-w-[367px] w-full md:border-none border p-2 md:p-0 rounded-xl md:rounded-none relative ">
           <span
             class="absolute top-5 py-1 px-4 text-white font-sans font-semibold text-xs leading-4 bg-[#FF6F61] uppercase z-10">hot
           </span>
@@ -533,10 +546,11 @@
             </div>
           </div>
 
-          <h4 class="text-black font-sans font-semibold text-base leading-5 mb-4">Nike Sportswear Futura Luxe</h4>
+          <h4 class="text-black font-sans font-semibold md:text-base text-sm leading-5 md:mb-4 mb-2">Nike Sportswear
+            Futura Luxe</h4>
           <ul class="flex items-center justify-between">
-            <li class="text-[#00000080] font-sans font-normal text-base leading-[21.79px]">Bag</li>
-            <li class="text-black font-sans font-semibold text-base leading-[21.79px]">$130.00</li>
+            <li class="text-[#00000080] font-sans font-normal text-xs md:text-base leading-[21.79px]">Bag</li>
+            <li class="text-black font-sans font-semibold md:text-base text-xs leading-[21.79px]">$130.00</li>
           </ul>
         </div>
       </div>
@@ -556,7 +570,7 @@
     </div>
   </section>
 
-  <section class="pt-44 pb-28">
+  <section class="md:pt-44 py-16 md:pb-28">
     <div class="max-w-[1180px] mx-auto px-5 w-full justify-center">
       <h2 class="text-black font-sans font-normal text-5xl leading-[68.09px] text-center mb-8">Best Sellers</h2>
       <div class="flex items-center justify-between mb-10">
@@ -567,12 +581,15 @@
           <option>Jacket</option>
         </select>
         <ul class="md:flex hidden items-center gap-8">
-          <li
+          <li id="filter__item-2"
             class="filter__active text-[#00000080] font-sans font-semibold text-base leading-[21.79px] cursor-pointer">
             All Products</li>
-          <li class="text-[#00000080] font-sans font-semibold text-base leading-[21.79px] cursor-pointer">T-Shirt</li>
-          <li class="text-[#00000080] font-sans font-semibold text-base leading-[21.79px] cursor-pointer">Hoodies</li>
-          <li class="text-[#00000080] font-sans font-semibold text-base leading-[21.79px] cursor-pointer">Jacket</li>
+          <li id="filter__item-2"
+            class="text-[#00000080] font-sans font-semibold text-base leading-[21.79px] cursor-pointer">T-Shirt</li>
+          <li id="filter__item-2"
+            class="text-[#00000080] font-sans font-semibold text-base leading-[21.79px] cursor-pointer">Hoodies</li>
+          <li id="filter__item-2"
+            class="text-[#00000080] font-sans font-semibold text-base leading-[21.79px] cursor-pointer">Jacket</li>
         </ul>
         <button
           class="btn__hover inline-flex gap-1 items-center py-1 px-4 text-white bg-[#1E2832] border border-[#1E2832] capitalize">
@@ -585,8 +602,8 @@
           </span>
           filter</button>
       </div>
-      <div class="w-full grid md:grid-cols-3 grid-cols-2 md:gap-20 gap-5">
-        <div class="max-w-[367px] w-full  relative ">
+      <div class="w-full grid md:grid-cols-3 grid-cols-2 lg:gap-20 md:gap-10 gap-5">
+        <div class="max-w-[367px] w-full md:border-none border p-2 md:p-0 rounded-xl md:rounded-none relative ">
           <span
             class="absolute top-5 py-1 px-4 text-white font-sans font-semibold text-xs leading-4 bg-[#FF6F61] uppercase z-10">hot
           </span>
@@ -637,17 +654,18 @@
             </div>
           </div>
 
-          <h4 class="text-black font-sans font-semibold text-base leading-5 mb-4">Nike Sportswear Futura Luxe</h4>
+          <h4 class="text-black font-sans font-semibold md:text-base text-sm leading-5 md:mb-4 mb-2">Nike Sportswear
+            Futura Luxe</h4>
           <ul class="flex items-center justify-between">
-            <li class="text-[#00000080] font-sans font-normal text-base leading-[21.79px]">Bag</li>
-            <li class="text-black font-sans font-semibold text-base leading-[21.79px]">$130.00</li>
+            <li class="text-[#00000080] font-sans font-normal text-xs md:text-base leading-[21.79px]">Bag</li>
+            <li class="text-black font-sans font-semibold md:text-base text-xs leading-[21.79px]">$130.00</li>
           </ul>
         </div>
 
-        <div class="max-w-[367px] w-full  relative ">
-          <span
+        <div class="max-w-[367px] w-full md:border-none border p-2 md:p-0 rounded-xl md:rounded-none relative ">
+          <!-- <span
             class="absolute top-5 py-1 px-4 text-white font-sans font-semibold text-xs leading-4 bg-[#FF6F61] uppercase z-10">hot
-          </span>
+          </span> -->
           <div class="relative overflow-hidden group mb-5">
             <a href=""><img class="max-w-[367px] w-full  max-h-[400px] h-full" src="./img/product/product.png"
                 alt="product"></a>
@@ -695,14 +713,15 @@
             </div>
           </div>
 
-          <h4 class="text-black font-sans font-semibold text-base leading-5 mb-4">Nike Sportswear Futura Luxe</h4>
+          <h4 class="text-black font-sans font-semibold md:text-base text-sm leading-5 md:mb-4 mb-2">Nike Sportswear
+            Futura Luxe</h4>
           <ul class="flex items-center justify-between">
-            <li class="text-[#00000080] font-sans font-normal text-base leading-[21.79px]">Bag</li>
-            <li class="text-black font-sans font-semibold text-base leading-[21.79px]">$130.00</li>
+            <li class="text-[#00000080] font-sans font-normal text-xs md:text-base leading-[21.79px]">Bag</li>
+            <li class="text-black font-sans font-semibold md:text-base text-xs leading-[21.79px]">$130.00</li>
           </ul>
         </div>
 
-        <div class="max-w-[367px] w-full  relative ">
+        <div class="max-w-[367px] w-full md:border-none border p-2 md:p-0 rounded-xl md:rounded-none relative ">
           <span
             class="absolute top-5 py-1 px-4 text-white font-sans font-semibold text-xs leading-4 bg-[#FF6F61] uppercase z-10">hot
           </span>
@@ -753,26 +772,28 @@
             </div>
           </div>
 
-          <h4 class="text-black font-sans font-semibold text-base leading-5 mb-4">Nike Sportswear Futura Luxe</h4>
+          <h4 class="text-black font-sans font-semibold md:text-base text-sm leading-5 md:mb-4 mb-2">Nike Sportswear
+            Futura Luxe</h4>
           <ul class="flex items-center justify-between">
-            <li class="text-[#00000080] font-sans font-normal text-base leading-[21.79px]">Bag</li>
-            <li class="text-black font-sans font-semibold text-base leading-[21.79px]">$130.00</li>
+            <li class="text-[#00000080] font-sans font-normal text-xs md:text-base leading-[21.79px]">Bag</li>
+            <li class="text-black font-sans font-semibold md:text-base text-xs leading-[21.79px]">$130.00</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="bg-[#FAFAFA] pt-28 pb-14" style="background-image: url(./img/customers/color-bg.png);">
-    <div>
+  <section class="bg-[#FAFAFA] md:pt-28 pt-20 pb-14" style="background-image: url(./img/customers/color-bg.png);">
+    <div class="px-5">
       <h2
-        class="text-[#484848] font-sans font-normal md:text-5xl text-4xl leading-[55px] md:leading-[62.64px] text-center mb-4">
+        class="text-[#484848] font-sans font-normal md:text-5xl text-3xl leading-[35px] md:leading-[62.64px] text-center mb-4">
         This Is What Our
         Customers Say</h2>
-      <p class="text-[#8A8A8A] font-sans font-normal text-base leading-7 text-center mb-16">Lorem ipsum dolor sit amet,
+      <p class="text-[#8A8A8A] font-sans font-normal md:text-base text-sm leading-7 text-center md:mb-16 mb-10">Lorem
+        ipsum dolor sit amet,
         consectetur adipiscing elit. Scelerisque duis</p>
     </div>
-    <div class="gallery  lg:block hidden">
+    <div class="gallery  lg:block hidden px-5">
       <div class="gallery-container flex justify-center">
         <div
           class="gallery-item gallery-item-2 max-w-[864px] w-full max-h-[400px] h-ful flex py-8 px-14 items-center gap-28"
@@ -865,10 +886,10 @@
     </div>
   </section>
 
-  <footer class="pt-44 pb-28">
+  <footer class="md:pt-44 pt-28 pb-28">
     <div class="max-w-[1180px] mx-auto px-5 w-full">
-      <div class="flex items-center justify-between">
-        <div>
+      <div class="lg:flex items-center justify-between gap-32">
+        <div class="lg:mb-0 mb-8 lg:border-none border-b pb-8 lg:pb-0">
           <h2 class="text-black font-serif text-3xl leading-[33.6px] mb-8">LogoBrand</h2>
           <p class="max-w-[392px] font-sans font-normal text-base leading-7 mb-8 text-[#1E2832BF]">Lorem ipsum dolor sit
             amet, consectetur adipiscing
@@ -913,7 +934,8 @@
             </li>
           </ul>
         </div>
-        <div class="flex gap-36">
+
+        <div class="grid md:grid-cols-3 grid-cols-2 md:gap-32 gap-10">
           <ul class="flex flex-col gap-3">
             <h3 class="text-black font-sans font-semibold text-base leading-5 mb-6">CATALOG</h3>
             <li><a class="text-[#1E2832] font-sans font-normal text-sm leading-6 hover:underline transition-all"
@@ -940,7 +962,7 @@
             <li><a class="text-[#1E2832] font-sans font-normal text-sm leading-6 hover:underline transition-all"
                 href="#">t-shirt</a></li>
           </ul>
-          <ul class="flex flex-col gap-3">
+          <ul class="flex flex-col gap-3 ">
             <h3 class="text-black font-sans font-semibold text-base leading-5 mb-6">CUSTOMER SERVICES</h3>
             <li><a class="text-[#1E2832] font-sans font-normal text-sm leading-6 hover:underline transition-all"
                 href="#">About Us</a></li>
@@ -959,17 +981,19 @@
   </footer>
 
   <section class="py-4 bg-[#1E2832]">
-    <div class="max-w-[840px] mx-auto flex justify-between items-center">
-      <p class="text-white font-normal font-sans text-base leading-5">© 2022 Coral , Inc.</p>
-      <ul class="grid grid-cols-6 gap-2 items-center">
-        <li><a href="#"><img class="w-12 h-7" src="./img/footer/1.png" alt="card"></a></li>
-        <li><a href="#"><img class="w-12 h-7" src="./img/footer/2.png" alt="card"></a></li>
-        <li><a href="#"><img class="w-12 h-7" src="./img/footer/3.png" alt="card"></a></li>
-        <li><a href="#"><img class="w-12 h-7" src="./img/footer/4.png" alt="card"></a></li>
-        <li><a href="#"><img class="w-12 h-7" src="./img/footer/5.png" alt="card"></a></li>
-        <li><a href="#"><img class="w-12 h-7" src="./img/footer/6.png" alt="card"></a></li>
+    <div class="max-w-[840px] px-5 mx-auto md:flex justify-between items-center ">
+      <p class="text-white font-normal font-sans text-base leading-5 md:mb-0 mb-6 md:text-left text-center">© 2022 Coral
+        , Inc.</p>
+      <ul class="grid grid-cols-6 gap-2 items-center md:mb-0 mb-6">
+        <li><a href="#"><img class="md:max-w-12 w-full" src="./img/footer/1.png" alt="card"></a></li>
+        <li><a href="#"><img class="md:max-w-12 w-full" src="./img/footer/2.png" alt="card"></a></li>
+        <li><a href="#"><img class="md:max-w-12 w-full" src="./img/footer/3.png" alt="card"></a></li>
+        <li><a href="#"><img class="md:max-w-12 w-full" src="./img/footer/4.png" alt="card"></a></li>
+        <li><a href="#"><img class="md:max-w-12 w-full" src="./img/footer/5.png" alt="card"></a></li>
+        <li><a href="#"><img class="md:max-w-12 w-full" src="./img/footer/6.png" alt="card"></a></li>
       </ul>
-      <a class="text-white font-sans font-normal text-base leading-5 p-1 flex gap-1 items-center" href="#header">Scroll
+      <a class="text-white font-sans font-normal text-base leading-5 p-1 flex gap-1 items-center md:justify-end justify-center"
+        href="#header">Scroll
         to top
         <span>
           <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -987,7 +1011,7 @@
   <script src="./js/swiper.js"></script>
   <script>
 
-var swiper = new Swiper(".mySwiper", {
+    var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
       spaceBetween: 10,
       loop: true,
@@ -1027,6 +1051,52 @@ var swiper = new Swiper(".mySwiper", {
     mobileMenuCloseButton.addEventListener("click", function () {
       mobileMenu.classList.toggle("left-0");
     });
+
+    let headerLink = document.querySelectorAll("#header__link");
+
+    headerLink.forEach(function (item, index) {
+      item.addEventListener('click', function () {
+        headerLink.forEach(function (item, index) {
+          item.classList.remove("header__active");
+        });
+        item.classList.add("header__active")
+      })
+    })
+
+
+    let filter__item = document.querySelectorAll("#filter__item");
+
+    filter__item.forEach(function (item, index) {
+      item.addEventListener('click', function () {
+        filter__item.forEach(function (item, index) {
+          item.classList.remove("filter__active");
+        });
+        item.classList.add("filter__active")
+      })
+    })
+
+    let filter__item2 = document.querySelectorAll("#filter__item-2");
+
+    filter__item2.forEach(function (item, index) {
+      item.addEventListener('click', function () {
+        filter__item2.forEach(function (item, index) {
+          item.classList.remove("filter__active");
+        });
+        item.classList.add("filter__active")
+      })
+    })
+
+    let mobile__header = document.querySelectorAll("#mobile__header");
+
+    mobile__header.forEach(function (item, index) {
+      item.addEventListener('click', function () {
+        mobile__header.forEach(function (item, index) {
+          item.classList.remove("header__active");
+        });
+        item.classList.add("header__active")
+      })
+    })
+
   </script>
 </body>
 

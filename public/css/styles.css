@@ -709,6 +709,12 @@ video {
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
 .flex-col {
   flex-direction: column;
 }
@@ -756,6 +762,9 @@ video {
 }
 .gap-8 {
   gap: 2rem;
+}
+.gap-32 {
+  gap: 8rem;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -1205,79 +1214,41 @@ img {
     padding: 20px;
     background-color: #fff;
 }
-
-
-
-
-
+.transition-all{
+    transition: 0.3s;
+}
 .hover\:bg-\[\#1E2832\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(30 40 50 / var(--tw-bg-opacity));
 }
-
-
-
-
-
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-
-
-
-
-
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
-
-
-
-
-
 .hover\:opacity-80:hover {
   opacity: 0.8;
 }
-
-
-
-
-
 .active\:opacity-75:active {
   opacity: 0.75;
 }
-
-
-
-
-
 .active\:opacity-80:active {
   opacity: 0.8;
 }
-
-
-
-
-
 .group:hover .group-hover\:translate-y-0 {
   --tw-translate-y: 0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-
-
-
-
-
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
 }
-
-
-
-
-
 @media (min-width: 768px) {
+
+  .md\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
 
   .md\:mx-0 {
     margin-left: 0px;
@@ -1292,10 +1263,6 @@ img {
     margin-bottom: 4rem;
   }
 
-  .md\:block {
-    display: block;
-  }
-
   .md\:flex {
     display: flex;
   }
@@ -1304,8 +1271,16 @@ img {
     display: inline-flex;
   }
 
+  .md\:inline-grid {
+    display: inline-grid;
+  }
+
   .md\:hidden {
     display: none;
+  }
+
+  .md\:w-12 {
+    width: 3rem;
   }
 
   .md\:grid-cols-3 {
@@ -1324,6 +1299,10 @@ img {
     gap: 5rem;
   }
 
+  .md\:gap-32 {
+    gap: 8rem;
+  }
+
   .md\:border-none {
     border-style: none;
   }
@@ -1335,6 +1314,10 @@ img {
   .md\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .md\:pt-44 {
+    padding-top: 11rem;
   }
 
   .md\:text-left {
@@ -1354,12 +1337,11 @@ img {
     line-height: 68.09px;
   }
 }
-
-
-
-
-
 @media (min-width: 1024px) {
+
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
 
   .lg\:block {
     display: block;
@@ -1375,6 +1357,14 @@ img {
 
   .lg\:gap-20 {
     gap: 5rem;
+  }
+
+  .lg\:border-none {
+    border-style: none;
+  }
+
+  .lg\:pb-0 {
+    padding-bottom: 0px;
   }
 
   .lg\:text-2xl {

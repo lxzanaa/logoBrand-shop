@@ -150,3 +150,6 @@ img {
     padding: 20px;
     background-color: #fff;
 }
+.transition-all{
+    transition: 0.3s;
+}
