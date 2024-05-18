@@ -124,58 +124,32 @@
             </svg>
           </button>
         </div>
-       <div class="border-b py-10 px-8" >
-        <div class="min-h-[150px]">
-          <div class="flex items-center justify-between mb-5">
-            <h3 class="text-[#8A8989] font-sans font-semibold text-base leading-5">Tops</h3>
-            <button class="text-[#8A8989] focus:outline-none">
-              <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1" stroke="currentColor"
-                      stroke-width="1.8" stroke-linecap="round" />
-              </svg>
-            </button>
-          </div>
-          <ul class="flex flex-col gap-3">
-            <li class="text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">Women's</li>
-            <li class="text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">Men's</li>
-            <li class="text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">Children's</li>
-          </ul>
-        </div>
+        <div class="border-b py-10 px-8">
 
-        <div class="min-h-[150px]">
-          <div class="flex items-center justify-between mb-5">
-            <h3 class="text-[#8A8989] font-sans font-semibold text-base leading-5">Tops</h3>
-            <button class="text-[#8A8989] focus:outline-none">
-              <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1" stroke="currentColor"
-                      stroke-width="1.8" stroke-linecap="round" />
-              </svg>
-            </button>
+          <div class="overflow-hidden">
+            <div id="button_active" class="flex items-center justify-between mb-5">
+              <h3 class="text-[#8A8989] font-sans font-semibold text-base leading-5">Tops</h3>
+              <button class="text-[#8A8989] focus:outline-none">
+                <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
+                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                </svg>
+              </button>
+            </div>
+            <ul id="active_list" class="flex flex-col gap-3 h-0 transition-all">
+              <li
+                class="text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+                Women's</li>
+              <li
+                class="text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+                Men's</li>
+              <li
+                class="text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+                Children's</li>
+            </ul>
           </div>
-          <ul class="flex flex-col gap-3">
-            <li class="text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">Women's</li>
-            <li class="text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">Men's</li>
-            <li class="text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">Children's</li>
-          </ul>
+          
         </div>
-
-        <div class="min-h-[150px]">
-          <div class="flex items-center justify-between mb-5">
-            <h3 class="text-[#8A8989] font-sans font-semibold text-base leading-5">Tops</h3>
-            <button class="text-[#8A8989] focus:outline-none">
-              <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1" stroke="currentColor"
-                      stroke-width="1.8" stroke-linecap="round" />
-              </svg>
-            </button>
-          </div>
-          <ul class="flex flex-col gap-3">
-            <li class="text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">Women's</li>
-            <li class="text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">Men's</li>
-            <li class="text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">Children's</li>
-          </ul>
-        </div>
-       </div>
       </aside>
     </div>
   </section>
@@ -302,7 +276,23 @@
 
 
   <script src="./js/swiper.js"></script>
-  
+  <script>
+    let buttons = document.querySelectorAll('#button_active'),
+      lists = document.querySelectorAll('#active_list');
+
+    buttons.forEach(function (button, index) {
+      button.addEventListener('click', function () {
+        let list = lists[index];
+        if (list.classList.contains('h-0')) {
+          list.classList.remove('h-0');
+          list.classList.add('h-[150px]');
+        } else {
+          list.classList.remove('h-[150px]');
+          list.classList.add('h-0');
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
