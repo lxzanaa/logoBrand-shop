@@ -22,16 +22,16 @@
         <ul class="hidden gap-14 items-center lg:flex">
           <li><a id="header__link"
               class="header__active text-[#1E283280] font-sans font-semibold text-base leading-[21.79px] border-b-[2px] pb-1 border-b-transparent"
-              href="#">Home</a></li>
+              href="index.html">Home</a></li>
           <li><a id="header__link"
               class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px] border-b-[2px] pb-1 border-b-transparent"
-              href="#">Products</a></li>
+              href="product.html">Products</a></li>
           <li><a id="header__link"
               class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px] border-b-[2px] pb-1 border-b-transparent"
-              href="#">About</a></li>
+              href="about.html">About</a></li>
           <li><a id="header__link"
               class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px] border-b-[2px] pb-1 border-b-transparent"
-              href="#">Contact</a></li>
+              href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div class="flex items-center gap-8 relative">
@@ -88,13 +88,13 @@
       <ul class="flex flex-col items-center gap-10">
         <li><a id="mobile__header"
             class="header__active text-[#1E283280] font-sans font-semibold text-base leading-[21.79px]"
-            href="#">Home</a></li>
+            href="index.html">Home</a></li>
         <li><a id="mobile__header" class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px]"
-            href="#">Products</a></li>
+            href="product.html">Products</a></li>
         <li><a id="mobile__header" class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px]"
-            href="#">About</a></li>
+            href="about.html">About</a></li>
         <li><a id="mobile__header" class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px]"
-            href="#">Contact</a></li>
+            href="contact.html">Contact</a></li>
       </ul>
       <div class="mt-40 w-full flex flex-col">
         <a class="btn__hover py-3 px-8 text-white font-sans font-semibold text-lg leading-[26.01px] bg-[#1E2832] flex gap-3 justify-center rounded-3xl border-[#1E2832] border mb-4"
@@ -1009,8 +1009,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/swiper.js"></script>
+  <script src="./js/app.js"></script>
   <script>
-
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
       spaceBetween: 10,
@@ -1030,73 +1030,7 @@
         },
       },
     });
-    const searchButton = document.getElementById('search-button');
-    const searchInput = document.getElementById('search-input');
-
-    searchButton.addEventListener('click', () => {
-      searchInput.classList.toggle('hidden');
-      if (!searchInput.classList.contains('hidden')) {
-        searchInput.focus();
-      }
-    });
-
-    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileMenuCloseButton = document.getElementById('mobile-menu-close');
-
-    mobileMenuToggle.addEventListener("click", function () {
-      mobileMenu.classList.toggle("left-0");
-    });
-
-    mobileMenuCloseButton.addEventListener("click", function () {
-      mobileMenu.classList.toggle("left-0");
-    });
-
-    let headerLink = document.querySelectorAll("#header__link");
-
-    headerLink.forEach(function (item, index) {
-      item.addEventListener('click', function () {
-        headerLink.forEach(function (item, index) {
-          item.classList.remove("header__active");
-        });
-        item.classList.add("header__active")
-      })
-    })
-
-
-    let filter__item = document.querySelectorAll("#filter__item");
-
-    filter__item.forEach(function (item, index) {
-      item.addEventListener('click', function () {
-        filter__item.forEach(function (item, index) {
-          item.classList.remove("filter__active");
-        });
-        item.classList.add("filter__active")
-      })
-    })
-
-    let filter__item2 = document.querySelectorAll("#filter__item-2");
-
-    filter__item2.forEach(function (item, index) {
-      item.addEventListener('click', function () {
-        filter__item2.forEach(function (item, index) {
-          item.classList.remove("filter__active");
-        });
-        item.classList.add("filter__active")
-      })
-    })
-
-    let mobile__header = document.querySelectorAll("#mobile__header");
-
-    mobile__header.forEach(function (item, index) {
-      item.addEventListener('click', function () {
-        mobile__header.forEach(function (item, index) {
-          item.classList.remove("header__active");
-        });
-        item.classList.add("header__active")
-      })
-    })
-
+   
   </script>
 </body>
 
