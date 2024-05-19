@@ -102,17 +102,19 @@ img {
     padding: 17px 20px;
     box-shadow: 0 4px 14px 1px rgba(0, 0, 0, 0.16);
     transform: scale(1);
-    transition: .2s ;
+    transition: .2s;
 }
-.gallery-controls button:hover{
+
+.gallery-controls button:hover {
     color: #fff;
     background: #000;
 }
-.gallery-controls button:active{
+
+.gallery-controls button:active {
     opacity: 0.8;
     transform: scale(0.8);
     box-shadow: none;
-    transition: .2s ;
+    transition: .2s;
 }
 
 .gallery-controls-button {
@@ -150,7 +152,8 @@ img {
     padding: 20px;
     background-color: #fff;
 }
-.transition-all{
+
+.transition-all {
     transition: 0.3s;
 }
 
@@ -192,7 +195,8 @@ input[type="range"]::-webkit-slider-thumb {
 
 .color-span {
     transition: background-color 0.3s, border-color 0.3s;
-  }
-  .color-span.active {
+}
+
+.color-span.active {
     border-width: 2px;
-  }
+}

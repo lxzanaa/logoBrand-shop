@@ -11,13 +11,18 @@ searchButton.addEventListener('click', () => {
 const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
 const mobileMenuCloseButton = document.getElementById('mobile-menu-close');
+const body = document.body;
 
 mobileMenuToggle.addEventListener("click", function () {
     mobileMenu.classList.toggle("left-0");
+    body.classList.toggle('overflow-hidden');
+    body.classList.toggle('h-screen');
 });
 
 mobileMenuCloseButton.addEventListener("click", function () {
     mobileMenu.classList.toggle("left-0");
+    body.classList.toggle('overflow-hidden');
+    body.classList.toggle('h-screen');
 });
 
 let headerLink = document.querySelectorAll("#header__link");
