@@ -371,7 +371,94 @@
         </div>
 
         <div id="open_range" class="flex items-center justify-between border-b px-8 py-5 cursor-pointer">
-          <h3 class="text-[#807D7E] font-sans font-semibold text-2xl leading-7">Price</h3>
+          <h3 class="text-[#3C4242] font-sans font-semibold text-2xl leading-7">Colors</h3>
+          <button id="button_range" class="text-[#3C4242] button_rotate transition-all">
+            <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
+                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="double__slider-box px-8  h-0 overflow-hidden transition-all bg-[#EDEDED]/40">
+          <ul id="color-buttons" class="grid grid-cols-4 justify-center gap-5 py-10">
+            <li class="flex justify-center">
+              <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
+                <span class="color-span w-9 h-9 rounded-xl bg-[#8434E1]"></span>
+                <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Purple</p>
+              </button>
+            </li>
+            <li class="flex justify-center">
+              <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
+                <span class="color-span w-9 h-9 rounded-xl bg-black"></span>
+                <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Black</p>
+              </button>
+            </li>
+            <li class="flex justify-center">
+              <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
+                <span class="color-span w-9 h-9 rounded-xl bg-[#F35528]"></span>
+                <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Red</p>
+              </button>
+            </li>
+            <li class="flex justify-center">
+              <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
+                <span class="color-span w-9 h-9 rounded-xl bg-[#F16F2B]"></span>
+                <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Orange</p>
+              </button>
+            </li>
+            <li class="flex justify-center">
+              <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
+                <span class="color-span w-9 h-9 rounded-xl bg-[#345EFF]"></span>
+                <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Navy</p>
+              </button>
+            </li>
+            <li class="flex justify-center">
+              <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
+                <span class="color-span w-9 h-9 rounded-xl bg-white border"></span>
+                <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">White</p>
+              </button>
+            </li>
+            <li class="flex justify-center">
+              <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
+                <span class="color-span w-9 h-9 rounded-xl bg-[#D67E3B]"></span>
+                <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Broom</p>
+              </button>
+            </li>
+            <li class="flex justify-center">
+              <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
+                <span class="color-span w-9 h-9 rounded-xl bg-[#48BC4E]"></span>
+                <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Green</p>
+              </button>
+            </li>
+            <li class="flex justify-center">
+              <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
+                <span class="color-span w-9 h-9 rounded-xl bg-[#FDC761]"></span>
+                <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Yellow</p>
+              </button>
+            </li>
+            <li class="flex justify-center">
+              <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
+                <span class="color-span w-9 h-9 rounded-xl bg-[#E4E5E8]"></span>
+                <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Grey</p>
+              </button>
+            </li>
+            <li class="flex justify-center">
+              <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
+                <span class="color-span w-9 h-9 rounded-xl bg-[#E08D9D]"></span>
+                <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Pink</p>
+              </button>
+            </li>
+            <li class="flex justify-center">
+              <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
+                <span class="color-span w-9 h-9 rounded-xl bg-[#3FDEFF]"></span>
+                <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Blue</p>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div id="open_range" class="flex items-center justify-between border-b px-8 py-5 cursor-pointer">
+          <h3 class="text-[#807D7E] font-sans font-semibold text-2xl leading-7">Size</h3>
           <button id="button_range" class="text-[#8A8989] button_rotate transition-all">
             <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
@@ -379,29 +466,38 @@
             </svg>
           </button>
         </div>
-        
+
         <div class="double__slider-box px-8  h-0 overflow-hidden transition-all">
-          <div class="range__slider">
-            <span class="slider-track"></span>
-            <input type="range" name="min-val" class="min-val" min="100" max="10000" value="200" oninput="slideMin()">
-            <input type="range" name="max-val" class="max-val" min="100" max="10000" value="7000" oninput="slideMax()">
-          </div>
-          <div class="flex items-center justify-between">
-            <div class="min-box">
-              <div class="input-wrap">
-                <input type="text" name="min_input"
-                  class="input-field italic font-light text-base leading-5 rounded-lg text-[#3C4242] relative border py-2 min-input w-[97px] text-center outline-none"
-                  onchange="setMinInput()">
-              </div>
-            </div>
-            <div class="max-box">
-              <div class="input-wrap">
-                <input type="text" name="max_input"
-                  class="input-field italic font-light text-base leading-5 rounded-lg text-[#3C4242] relative border py-2 max-input  w-[97px] text-center outline-none"
-                  onchange="setMaxInput()">
-              </div>
-            </div>
-          </div>
+          <ul id="size-buttons" class="grid grid-cols-3 gap-5 py-10">
+            <li class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">XXS</li>
+            <li class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">XL</li>
+            <li class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">XS</li>
+            <li class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">S</li>
+            <li class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">M</li>
+            <li class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">L</li>
+            <li class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">XXL</li>
+            <li class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">3XL</li>
+            <li class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">4XL</li>
+          </ul>          
+        </div>
+
+        <div id="open_range" class="flex items-center justify-between border-b px-8 py-5 cursor-pointer">
+          <h3 class="text-[#807D7E] font-sans font-semibold text-2xl leading-7">Size</h3>
+          <button id="button_range" class="text-[#8A8989] button_rotate transition-all">
+            <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
+                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="double__slider-box px-8  h-0 overflow-hidden transition-all">
+          <ul id="size-buttons" class="grid grid-cols-2 gap-5 py-10">
+            <li class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">Long</li>
+            <li class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">Short</li>
+            <li class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">Tight</li>
+            <li class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">Wide</li>
+          </ul>          
         </div>
       </aside>
     </div>
@@ -459,7 +555,8 @@
         <div class="grid md:grid-cols-3 grid-cols-2 md:gap-32 gap-10">
           <ul class="flex flex-col gap-3 border-b-[1px] md:border-none pb-8 md:pb-0">
             <h3 class="text-black font-sans font-semibold text-base leading-5 mb-6">CATALOG</h3>
-            <li><a class="text-[#1E2832] font-sans font-normal text-sm leading-6 hover:underline transition-all"
+            <li class="flex justify-center"><a
+                class="text-[#1E2832] font-sans font-normal text-sm leading-6 hover:underline transition-all"
                 href="#">Necklaces</a></li>
             <li><a class="text-[#1E2832] font-sans font-normal text-sm leading-6 hover:underline transition-all"
                 href="#">Our Producers</a></li>
@@ -531,6 +628,7 @@
   <script src="./js/swiper.js"></script>
   <script src="./js/app.js"></script>
   <script src="./js/range.js"></script>
+  <script src="./js/color.js"></script>
   <script>
     let buttons = document.querySelectorAll('#button_active'),
       lists = document.querySelectorAll('#active_list'),
@@ -555,22 +653,28 @@
     });
 
 
-    let open_range = document.getElementById('open_range'),
-      double_sliderBox = document.querySelector('.double__slider-box'),
-      button_range = document.querySelector('#button_range');
+    let open_ranges = document.querySelectorAll('#open_range');
+    let double_sliderBoxes = document.querySelectorAll('.double__slider-box');
+    let button_ranges = document.querySelectorAll('#button_range');
 
-    open_range.addEventListener('click', () => {
-      double_sliderBox.classList.toggle('h-0');
-      double_sliderBox.classList.toggle('h-[135px]');
+    open_ranges.forEach((open_range, index) => {
+      open_range.addEventListener('click', () => {
+        let double_sliderBox = double_sliderBoxes[index];
+        let button_range = button_ranges[index];
 
-      if (button_range.classList.contains('-rotate-90')) {
-        button_range.classList.remove('-rotate-90');
-        button_range.classList.add('rotate-0');
-      } else {
-        button_range.classList.remove('rotate-0');
-        button_range.classList.add('-rotate-90');
-      }
+        double_sliderBox.classList.toggle('h-0');
+        double_sliderBox.classList.toggle('min-h-[100px]');
+
+        if (button_range.classList.contains('-rotate-90')) {
+          button_range.classList.remove('-rotate-90');
+          button_range.classList.add('rotate-0');
+        } else {
+          button_range.classList.remove('rotate-0');
+          button_range.classList.add('-rotate-90');
+        }
+      });
     });
+
 
   </script>
 </body>
