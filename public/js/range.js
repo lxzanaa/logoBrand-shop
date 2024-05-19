@@ -13,12 +13,17 @@ const range = document.querySelector(".slider-track");
 const sliderMinValue = parseInt(minVal.getAttribute('min'));
 const sliderMaxValue = parseInt(maxVal.getAttribute('max'));
 
+minVal.addEventListener('input', slideMin);
+maxVal.addEventListener('input', slideMax);
+priceInputMin.addEventListener('change', setMinInput);
+priceInputMax.addEventListener('change', setMaxInput);
+
 function slideMin() {
     let gap = parseInt(maxVal.value) - parseInt(minVal.value);
     if (gap <= minGap) {
         minVal.value = parseInt(maxVal.value) - minGap;
     }
-    priceInputMin.value = '$' + minVal.value; 
+    priceInputMin.value = '$' + minVal.value;
     setArea();
 }
 
@@ -27,7 +32,7 @@ function slideMax() {
     if (gap <= minGap) {
         maxVal.value = parseInt(minVal.value) + minGap;
     }
-    priceInputMax.value = '$' + maxVal.value; 
+    priceInputMax.value = '$' + maxVal.value;
     setArea();
 }
 
@@ -43,19 +48,27 @@ function setArea() {
 }
 
 function setMinInput() {
-    let minPrice = parseInt(priceInputMin.value);
+    let minPrice = parseInt(priceInputMin.value.replace('$', ''));
     if (minPrice < sliderMinValue) {
-        priceInputMin.value = sliderMinValue;
+        minPrice = sliderMinValue;
     }
-    minVal.value = priceInputMin.value;
+    if (minPrice > parseInt(maxVal.value) - minGap) {
+        minPrice = parseInt(maxVal.value) - minGap;
+    }
+    priceInputMin.value = '$' + minPrice;
+    minVal.value = minPrice;
     slideMin();
 }
 
 function setMaxInput() {
-    let maxPrice = parseInt(priceInputMax.value);
+    let maxPrice = parseInt(priceInputMax.value.replace('$', ''));
     if (maxPrice > sliderMaxValue) {
-        priceInputMax.value = sliderMaxValue;
+        maxPrice = sliderMaxValue;
     }
-    maxVal.value = priceInputMax.value;
+    if (maxPrice < parseInt(minVal.value) + minGap) {
+        maxPrice = parseInt(minVal.value) + minGap;
+    }
+    priceInputMax.value = '$' + maxPrice;
+    maxVal.value = maxPrice;
     slideMax();
 }
