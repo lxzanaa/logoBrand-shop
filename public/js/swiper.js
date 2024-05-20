@@ -42,3 +42,12 @@ const galleryControlsPrevious = document.querySelector('.gallery-controls-previo
 const galleryControlsNext = document.querySelector('.gallery-controls-next');
 
 const exampleCarousel = new Carousel(galleryContainer, galleryItems, galleryControlsPrevious, galleryControlsNext);
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});

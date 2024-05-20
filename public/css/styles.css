@@ -527,6 +527,9 @@ video {
 .relative {
   position: relative;
 }
+.-left-\[295px\] {
+  left: -295px;
+}
 .-left-full {
   left: -100%;
 }
@@ -545,23 +548,17 @@ video {
 .right-0 {
   right: 0px;
 }
+.right-\[-38\.5px\] {
+  right: -38.5px;
+}
 .top-0 {
   top: 0px;
-}
-.top-5 {
-  top: 1.25rem;
-}
-.top-24 {
-  top: 6rem;
-}
-.top-20 {
-  top: 5rem;
 }
 .top-16 {
   top: 4rem;
 }
-.-left-0 {
-  left: -0px;
+.top-5 {
+  top: 1.25rem;
 }
 .-z-20 {
   z-index: -20;
@@ -571,6 +568,9 @@ video {
 }
 .z-20 {
   z-index: 20;
+}
+.z-30 {
+  z-index: 30;
 }
 .col-span-2 {
   grid-column: span 2 / span 2;
@@ -630,6 +630,9 @@ video {
 .mr-5 {
   margin-right: 1.25rem;
 }
+.mt-10 {
+  margin-top: 2.5rem;
+}
 .mt-40 {
   margin-top: 10rem;
 }
@@ -666,8 +669,14 @@ video {
 .h-screen {
   height: 100vh;
 }
+.max-h-\[100px\] {
+  max-height: 100px;
+}
 .max-h-\[400px\] {
   max-height: 400px;
+}
+.max-h-\[500px\] {
+  max-height: 500px;
 }
 .min-h-\[100px\] {
   min-height: 100px;
@@ -840,26 +849,12 @@ video {
 .rounded-xl {
   border-radius: 0.75rem;
 }
-.rounded-md {
-  border-radius: 0.375rem;
-}
-.rounded-s {
-  border-start-start-radius: 0.25rem;
-  border-end-start-radius: 0.25rem;
-}
-.rounded-e {
-  border-start-end-radius: 0.25rem;
-  border-end-end-radius: 0.25rem;
-}
 .rounded-e-lg {
   border-start-end-radius: 0.5rem;
   border-end-end-radius: 0.5rem;
 }
 .border {
   border-width: 1px;
-}
-.border-\[2px\] {
-  border-width: 2px;
 }
 .border-b {
   border-bottom-width: 1px;
@@ -959,17 +954,11 @@ video {
 .p-2 {
   padding: 0.5rem;
 }
-.p-4 {
-  padding: 1rem;
-}
-.p-10 {
-  padding: 2.5rem;
-}
-.p-5 {
-  padding: 1.25rem;
-}
 .p-3 {
   padding: 0.75rem;
+}
+.p-4 {
+  padding: 1rem;
 }
 .px-14 {
   padding-left: 3.5rem;
@@ -1479,11 +1468,6 @@ input[type="range"]::-webkit-slider-thumb {
   opacity: 0.8;
 }
 
-.focus\:outline-none:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
 .active\:opacity-75:active {
   opacity: 0.75;
 }
@@ -1502,6 +1486,10 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 @media (min-width: 768px) {
+
+  .md\:top-20 {
+    top: 5rem;
+  }
 
   .md\:col-span-1 {
     grid-column: span 1 / span 1;
@@ -1538,10 +1526,6 @@ input[type="range"]::-webkit-slider-thumb {
 
   .md\:max-w-\[1180px\] {
     max-width: 1180px;
-  }
-
-  .md\:max-w-\[784px\] {
-    max-width: 784px;
   }
 
   .md\:grid-cols-3 {

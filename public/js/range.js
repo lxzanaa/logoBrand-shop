@@ -3,40 +3,50 @@ window.onload = function () {
     slideMax();
 }
 
-const minVal = document.querySelector(".min-val");
-const maxVal = document.querySelector(".max-val");
-const priceInputMin = document.querySelector(".min-input");
-const priceInputMax = document.querySelector(".max-input");
+const minVals = document.querySelectorAll(".min-val");
+const maxVals = document.querySelectorAll(".max-val");
+const priceInputsMin = document.querySelectorAll(".min-input");
+const priceInputsMax = document.querySelectorAll(".max-input");
 const minGap = 0;
-const range = document.querySelector(".slider-track");
+const ranges = document.querySelectorAll(".slider-track");
 
-const sliderMinValue = parseInt(minVal.getAttribute('min'));
-const sliderMaxValue = parseInt(maxVal.getAttribute('max'));
+minVals.forEach((minVal, index) => {
+    const maxVal = maxVals[index];
+    const priceInputMin = priceInputsMin[index];
+    const priceInputMax = priceInputsMax[index];
+    const range = ranges[index];
 
-minVal.addEventListener('input', slideMin);
-maxVal.addEventListener('input', slideMax);
-priceInputMin.addEventListener('change', setMinInput);
-priceInputMax.addEventListener('change', setMaxInput);
+    const sliderMinValue = parseInt(minVal.getAttribute('min'));
+    const sliderMaxValue = parseInt(maxVal.getAttribute('max'));
 
-function slideMin() {
+    minVal.addEventListener('input', () => slideMin(minVal, maxVal, priceInputMin, range, sliderMinValue, sliderMaxValue));
+    maxVal.addEventListener('input', () => slideMax(minVal, maxVal, priceInputMax, range, sliderMinValue, sliderMaxValue));
+    priceInputMin.addEventListener('change', () => setMinInput(minVal, maxVal, priceInputMin, range, sliderMinValue, sliderMaxValue));
+    priceInputMax.addEventListener('change', () => setMaxInput(minVal, maxVal, priceInputMax, range, sliderMinValue, sliderMaxValue));
+
+    slideMin(minVal, maxVal, priceInputMin, range, sliderMinValue, sliderMaxValue);
+    slideMax(minVal, maxVal, priceInputMax, range, sliderMinValue, sliderMaxValue);
+});
+
+function slideMin(minVal, maxVal, priceInputMin, range, sliderMinValue, sliderMaxValue) {
     let gap = parseInt(maxVal.value) - parseInt(minVal.value);
     if (gap <= minGap) {
         minVal.value = parseInt(maxVal.value) - minGap;
     }
     priceInputMin.value = '$' + minVal.value;
-    setArea();
+    setArea(minVal, maxVal, range, sliderMinValue, sliderMaxValue);
 }
 
-function slideMax() {
+function slideMax(minVal, maxVal, priceInputMax, range, sliderMinValue, sliderMaxValue) {
     let gap = parseInt(maxVal.value) - parseInt(minVal.value);
     if (gap <= minGap) {
         maxVal.value = parseInt(minVal.value) + minGap;
     }
     priceInputMax.value = '$' + maxVal.value;
-    setArea();
+    setArea(minVal, maxVal, range, sliderMinValue, sliderMaxValue);
 }
 
-function setArea() {
+function setArea(minVal, maxVal, range, sliderMinValue, sliderMaxValue) {
     let minValue = parseInt(minVal.value);
     let maxValue = parseInt(maxVal.value);
     let rangeWidth = sliderMaxValue - sliderMinValue;
@@ -47,7 +57,7 @@ function setArea() {
     range.style.right = rightPercent + "%";
 }
 
-function setMinInput() {
+function setMinInput(minVal, maxVal, priceInputMin, range, sliderMinValue, sliderMaxValue) {
     let minPrice = parseInt(priceInputMin.value.replace('$', ''));
     if (minPrice < sliderMinValue) {
         minPrice = sliderMinValue;
@@ -57,10 +67,10 @@ function setMinInput() {
     }
     priceInputMin.value = '$' + minPrice;
     minVal.value = minPrice;
-    slideMin();
+    slideMin(minVal, maxVal, priceInputMin, range, sliderMinValue, sliderMaxValue);
 }
 
-function setMaxInput() {
+function setMaxInput(minVal, maxVal, priceInputMax, range, sliderMinValue, sliderMaxValue) {
     let maxPrice = parseInt(priceInputMax.value.replace('$', ''));
     if (maxPrice > sliderMaxValue) {
         maxPrice = sliderMaxValue;
@@ -70,5 +80,5 @@ function setMaxInput() {
     }
     priceInputMax.value = '$' + maxPrice;
     maxVal.value = maxPrice;
-    slideMax();
+    slideMax(minVal, maxVal, priceInputMax, range, sliderMinValue, sliderMaxValue);
 }
