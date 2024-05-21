@@ -200,3 +200,7 @@ input[type="range"]::-webkit-slider-thumb {
 .color-span.active {
     border-width: 2px;
 }
+
+.img_active{
+    outline: 0.5px solid #3C4242 !important;
+}

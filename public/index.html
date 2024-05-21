@@ -10,6 +10,9 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -115,7 +118,7 @@
     <div class="max-w-[1180px] mx-auto px-5 w-full md:flex justify-between items-center mb-32 gap-5">
       <img class="w-[109.76px] absolute left-0" src="./img/hero/left.png">
       <img class="w-[161.72px] absolute right-0 top-0" src="./img/hero/right.png">
-      <div class="text-center md:text-left md:mb-0 mb-7">
+      <div class="text-center md:text-left md:mb-0 mb-7 wow animate__animated animate__fadeInLeft">
         <h1 class="text-black font-sans font-light lg:text-6xl text-5xl leading-[55px] mb-10">Collections</h1>
         <p
           class="max-w-[571px] font-sans font-normal lg:text-2xl text-xl leading-[40px] capitalize text-center md:text-left mx-auto md:mx-0 md:mb-16 mb-12">
@@ -134,10 +137,10 @@
           shop now</a>
       </div>
       <div>
-        <img class="max-w-[433px] w-full mx-auto md:mx-0 md:img-animation" src="./img/hero/hero.png" alt="hero">
+        <img class="max-w-[433px] w-full mx-auto md:mx-0 md:img-animation wow animate__animated animate__fadeInRight" src="./img/hero/hero.png" alt="hero">
       </div>
     </div>
-    <div class="max-w-[1180px] mx-auto px-5 w-full">
+    <div class="max-w-[1180px] mx-auto px-5 w-full wow animate__animated animate__fadeIn">
       <ul class="grid md:grid-cols-5 grid-cols-2 gap-5 items-center justify-between w-full ">
         <li>
           <img class="md:max-w-48 w-full h-full mx-auto md:border-none border md:p-0 p-4" src="./img/brand/01.png"
@@ -559,7 +562,7 @@
 
   <section class="pt-[220px] pb-[240px] bg-cover" style="background-image: url(./img/zara/zara-bg.png);">
     <div class="max-w-[1180px] mx-auto px-5 w-full  flex justify-end">
-      <div>
+      <div class="wow animate__animated animate__fadeInRight" >
         <img class="w-52 mb-16" src="./img//zara/zara.png" alt="zara logo">
         <p class="max-w-[466px] text-white font-sans font-normal text-2xl leading-9">Lustrous yet understated. The new
           evening
@@ -786,7 +789,7 @@
   <section class="bg-[#FAFAFA] md:pt-28 pt-20 pb-14" style="background-image: url(./img/customers/color-bg.png);">
     <div class="px-5">
       <h2
-        class="text-[#484848] font-sans font-normal md:text-5xl text-3xl leading-[35px] md:leading-[62.64px] text-center mb-4">
+        class="text-[#484848] font-sans font-normal md:text-5xl text-3xl leading-[35px] md:leading-[62.64px] text-center mb-4 wow animate__animated animate__fadeIn">
         This Is What Our
         Customers Say</h2>
       <p class="text-[#8A8A8A] font-sans font-normal md:text-base text-sm leading-7 text-center md:mb-16 mb-10">Lorem
@@ -1034,6 +1037,9 @@
         },
       },
     });
+
+    new WOW().init();
+    var rellax = new Rellax('.rellax');
 
   </script>
 </body>
