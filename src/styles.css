@@ -223,4 +223,6 @@ input[type="range"]::-webkit-slider-thumb {
 .color_active.active {
     outline-width: 2px solid transparent;
 }
-
+.change_border {
+    border-bottom: 2px solid #000000 !important;
+}
