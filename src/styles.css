@@ -204,3 +204,23 @@ input[type="range"]::-webkit-slider-thumb {
 .img_active{
     outline: 0.5px solid #3C4242 !important;
 }
+.size_active{
+    background-color: #3C4242 !important;
+    color: white !important;
+}
+.color_active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    outline: 2px solid transparent;
+    border-radius: 50%;
+    transition: outline-color 0.3s ease;
+}
+
+.color_active.active {
+    outline-width: 2px solid transparent;
+}
+

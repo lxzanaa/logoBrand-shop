@@ -24,11 +24,11 @@
             <div class="flex items-center">
                 <ul class="hidden gap-14 items-center lg:flex">
                     <li><a id="header__link"
-                            class="header__active text-[#1E283280] font-sans font-semibold text-base leading-[21.79px] border-b-[2px] pb-1 border-b-transparent"
+                            class=" text-[#1E283280] font-sans font-semibold text-base leading-[21.79px] border-b-[2px] pb-1 border-b-transparent"
                             href="index.html">Home</a></li>
                     <li><a id="header__link"
-                            class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px] border-b-[2px] pb-1 border-b-transparent"
-                            href="product.html">Products</a></li>
+                            class="header__active text-[#1E283280] font-sans font-semibold text-base leading-[21.79px] border-b-[2px] pb-1 border-b-transparent"
+                            href="product.html ">Products</a></li>
                     <li><a id="header__link"
                             class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px] border-b-[2px] pb-1 border-b-transparent"
                             href="about.html">About</a></li>
@@ -89,10 +89,10 @@
                 </button>
             </div>
             <ul class="flex flex-col items-center gap-10">
+                <li><a id="mobile__header" class=" text-[#1E283280] font-sans font-semibold text-base leading-[21.79px]"
+                        href="index.html">Home</a></li>
                 <li><a id="mobile__header"
                         class="header__active text-[#1E283280] font-sans font-semibold text-base leading-[21.79px]"
-                        href="index.html">Home</a></li>
-                <li><a id="mobile__header" class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px]"
                         href="product.html">Products</a></li>
                 <li><a id="mobile__header" class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px]"
                         href="about.html">About</a></li>
@@ -116,8 +116,8 @@
 
 
     <section class="pt-7">
-        <div class="max-w-[1180px] mx-auto px-5 w-full flex gap-14 bg-[#F6F6F6]">
-            <div class="flex gap-9 items-center ">
+        <div class="max-w-[1180px] mx-auto px-5 w-full lg:flex gap-14 ">
+            <div class="flex gap-9 items-center justify-center">
                 <div class="flex flex-col gap-5">
                     <img id="img_change" class="w-20 h-20 rounded-xl cursor-pointer p-1" src="./img/shop/03.png"
                         alt="flower">
@@ -136,7 +136,7 @@
                 </div>
             </div>
             <div class=" items-center">
-                <ul class="flex items-center gap-4 mb-8" >
+                <ul class="flex items-center gap-4 mb-8">
                     <li><a href="product.html">Product</a></li>
                     <li>
                         <svg width="5" height="12" viewBox="0 0 5 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -147,33 +147,56 @@
                     </li>
                     <li><a href="shop.html">Product 1</a></li>
                 </ul>
-                <h2 class="font-sans text-[#3C4242] italic text-4xl leading-[47.6px] font-light mb-7" >Raven Hoodie With <br> Black colored Design</h2>
+                <h2 class="font-sans text-[#3C4242] italic text-4xl leading-[47.6px] font-light mb-7">Raven Hoodie With
+                    <br> Black colored Design
+                </h2>
                 <div class="flex items-center gap-6 mb-8">
                     <img src="./img/shop/stars.svg">
                     <a class="flex items-center gap-4" href="#"><span><img src="./img/shop/Icon.svg"></span> 120
                         comment</a>
                 </div>
-                <ul class="flex items-center gap-5 mb-6" >
-                    <li class="text-[#3F4646] font-sans font-semibold text-lg leading-6" >Select Size</li>
-                    <li class="flex items-center gap-4 text-[#807D7E] italic font-sans font-light text-lg leading-6" >Size Guide
-                        <span><img src="./img/shop/arrow.svg"></span>
+                <ul class="flex items-center gap-5 mb-6">
+                    <li class="text-[#3F4646] font-sans font-semibold text-lg leading-6">Select Size</li>
+                    <li><a class="flex items-center gap-4 text-[#807D7E] italic font-sans font-light text-lg leading-6"
+                            href="">Size Guide
+                            <span><img class="flex" src="./img/shop/arrow.svg"></span>
+                        </a>
                     </li>
                 </ul>
-                <ul class="flex items-center gap-5 mb-14" >
-                    <li class="w-9 h-9 flex items-center justify-center border-[#BEBCBD] border-[1.5px] rounded-xl italic text-[#3C4242] font-sans text-base leading-5" >XS</li>
-                    <li class="w-9 h-9 flex items-center justify-center border-[#BEBCBD] border-[1.5px] rounded-xl italic text-[#3C4242] font-sans text-base leading-5" >S</li>
-                    <li class="w-9 h-9 flex items-center justify-center border-[#BEBCBD] border-[1.5px] rounded-xl italic text-[#3C4242] font-sans text-base leading-5" >M</li>
-                    <li class="w-9 h-9 flex items-center justify-center border-[#BEBCBD] border-[1.5px] rounded-xl italic text-[#3C4242] font-sans text-base leading-5" >S</li>
-                    <li class="w-9 h-9 flex items-center justify-center border-[#BEBCBD] border-[1.5px] rounded-xl italic text-[#3C4242] font-sans text-base leading-5" >XL</li>
+                <ul class="flex items-center gap-5 mb-14">
+                    <li id="size-shop"
+                        class="cursor-pointer w-9 h-9 flex items-center justify-center border-[#BEBCBD] border-[1.5px] rounded-xl italic text-[#3C4242] font-sans text-base leading-5">
+                        XS</li>
+                    <li id="size-shop"
+                        class="cursor-pointer w-9 h-9 flex items-center justify-center border-[#BEBCBD] border-[1.5px] rounded-xl italic text-[#3C4242] font-sans text-base leading-5">
+                        S</li>
+                    <li id="size-shop"
+                        class="cursor-pointer w-9 h-9 flex items-center justify-center border-[#BEBCBD] border-[1.5px] rounded-xl italic text-[#3C4242] font-sans text-base leading-5">
+                        M</li>
+                    <li id="size-shop"
+                        class="size_active cursor-pointer w-9 h-9 flex items-center justify-center border-[#BEBCBD] border-[1.5px] rounded-xl italic text-[#3C4242] font-sans text-base leading-5">
+                        S</li>
+                    <li id="size-shop"
+                        class="cursor-pointer w-9 h-9 flex items-center justify-center border-[#BEBCBD] border-[1.5px] rounded-xl italic text-[#3C4242] font-sans text-base leading-5">
+                        XL</li>
                 </ul>
-                <h4 class="text-[#3F4646] font-sans font-semibold text-lg leading-6 mb-6" >Colours Available </h4>
+                <h4 class="text-[#3F4646] font-sans font-semibold text-lg leading-6 mb-6">Colours Available </h4>
                 <ul class="flex items-center gap-5 mb-10">
-                    <li class="w-6 h-6 rounded-full bg-[#3F4646] cursor-pointer"></li>
-                    <li class="w-6 h-6 rounded-full bg-[#EB84B0] cursor-pointer"></li>
-                    <li class="w-6 h-6 rounded-full bg-[#EDD146] cursor-pointer"></li>
-                    <li class="w-6 h-6 rounded-full bg-[#9C1F35] cursor-pointer"></li>
+                    <li class="color_active w-[30px] h-[30px] rounded-full border-transparent flex items-center justify-center">
+                        <button class="color-btn w-5 h-5 rounded-full bg-[#3F4646] cursor-pointer"></button>
+                    </li>
+                    <li class="w-[30px] h-[30px] rounded-full border-transparent flex items-center justify-center" >
+                        <button class="color-btn w-5 h-5 rounded-full bg-[#EB84B0] cursor-pointer"></button>
+                    </li>
+                    <li class="w-[30px] h-[30px] rounded-full border-transparent flex items-center justify-center" >
+                        <button class="color-btn w-5 h-5 rounded-full bg-[#EDD146] cursor-pointer"></button>
+                    </li>
+                    <li class="w-[30px] h-[30px] rounded-full border-transparent flex items-center justify-center" >
+                        <button class="color-btn w-5 h-5 rounded-full bg-[#9C1F35] cursor-pointer"></button>
+                    </li>
                 </ul>
-                <div class="flex items-center gap-5 border-b pb-10">
+                
+                <div class="flex items-center gap-5 border-b mb-6 pb-10">
                     <a class="btn__hover text-white inline-flex gap-3 py-5 px-6 bg-[#1E2832] border border-[#1E2832] rounded-xl capitalize"
                         href="#">
                         <span>
@@ -189,23 +212,23 @@
                         href="#">$25.000</a>
                 </div>
                 <div>
-                    <ul>
+                    <ul class="grid grid-cols-2 gap-5">
                         <li><a class="flex items-center gap-4" href="#">
-                            <span><img src="./img/shop/1.svg"></span>
-                            Secure payment
-                        </a></li>
+                                <span><img src="./img/shop/1.svg"></span>
+                                Secure payment
+                            </a></li>
                         <li><a class="flex items-center gap-4" href="#">
-                            <span><img src="./img/shop/1.svg"></span>
-                            Secure payment
-                        </a></li>
+                                <span><img src="./img/shop/2.svg"></span>
+                                Size & Fit
+                            </a></li>
                         <li><a class="flex items-center gap-4" href="#">
-                            <span><img src="./img/shop/1.svg"></span>
-                            Secure payment
-                        </a></li>
+                                <span><img src="./img/shop/3.svg"></span>
+                                Free shipping
+                            </a></li>
                         <li><a class="flex items-center gap-4" href="#">
-                            <span><img src="./img/shop/1.svg"></span>
-                            Secure payment
-                        </a></li>
+                                <span><img src="./img/shop/4.svg"></span>
+                                Free Shipping
+                            </a></li>
                     </ul>
                 </div>
             </div>
@@ -347,6 +370,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="./js/app.js"></script>
+    <script src="./js/color.js"></script>
     <script>
 
         let container = document.querySelector("#container__imgHover")
@@ -385,6 +409,17 @@
                     element.classList.remove("img_active")
                 })
                 item.classList.add("img_active");
+            })
+        })
+
+        let sizeShop = document.querySelectorAll("#size-shop")
+
+        sizeShop.forEach(function (item, index) {
+            item.addEventListener('click', function () {
+                sizeShop.forEach(function (element) {
+                    element.classList.remove("size_active")
+                })
+                item.classList.add("size_active");
             })
         })
 

@@ -657,8 +657,8 @@ video {
 .h-20 {
   height: 5rem;
 }
-.h-6 {
-  height: 1.5rem;
+.h-5 {
+  height: 1.25rem;
 }
 .h-60 {
   height: 15rem;
@@ -681,6 +681,9 @@ video {
 .h-screen {
   height: 100vh;
 }
+.h-\[30px\] {
+  height: 30px;
+}
 .max-h-\[400px\] {
   max-height: 400px;
 }
@@ -696,11 +699,11 @@ video {
 .w-36 {
   width: 9rem;
 }
+.w-5 {
+  width: 1.25rem;
+}
 .w-52 {
   width: 13rem;
-}
-.w-6 {
-  width: 1.5rem;
 }
 .w-60 {
   width: 15rem;
@@ -719,6 +722,9 @@ video {
 }
 .w-full {
   width: 100%;
+}
+.w-\[30px\] {
+  width: 30px;
 }
 .max-w-\[1180px\] {
   max-width: 1180px;
@@ -924,12 +930,11 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(190 188 189 / var(--tw-border-opacity));
 }
+.border-transparent {
+  border-color: transparent;
+}
 .border-b-transparent {
   border-bottom-color: transparent;
-}
-.bg-\[\#121212\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(18 18 18 / var(--tw-bg-opacity));
 }
 .bg-\[\#1E2832\] {
   --tw-bg-opacity: 1;
@@ -993,10 +998,6 @@ video {
 .bg-\[\#F35528\] {
   --tw-bg-opacity: 1;
   background-color: rgb(243 85 40 / var(--tw-bg-opacity));
-}
-.bg-\[\#F6F6F6\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(246 246 246 / var(--tw-bg-opacity));
 }
 .bg-\[\#FAFAFA\] {
   --tw-bg-opacity: 1;
@@ -1206,9 +1207,6 @@ video {
 }
 .font-light {
   font-weight: 300;
-}
-.font-medium {
-  font-weight: 500;
 }
 .font-normal {
   font-weight: 400;
@@ -1556,6 +1554,25 @@ input[type="range"]::-webkit-slider-thumb {
 .img_active{
     outline: 0.5px solid #3C4242 !important;
 }
+.size_active{
+    background-color: #3C4242 !important;
+    color: white !important;
+}
+.color_active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    outline: 2px solid transparent;
+    border-radius: 50%;
+    transition: outline-color 0.3s ease;
+}
+
+.color_active.active {
+    outline-width: 2px solid transparent;
+}
 
 .hover\:bg-\[\#1E2832\]:hover {
   --tw-bg-opacity: 1;
@@ -1829,3 +1846,4 @@ input[type="range"]::-webkit-slider-thumb {
     line-height: 1;
   }
 }
+

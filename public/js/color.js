@@ -45,3 +45,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const colorButtons = document.querySelectorAll('.color-btn');
+    
+    colorButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            document.querySelectorAll('li').forEach(li => li.classList.remove('color_active'));
+            
+            const parentLi = button.parentElement;
+            parentLi.classList.add('color_active');
+            
+            const bgColor = window.getComputedStyle(button).backgroundColor;
+            
+            parentLi.style.outlineColor = bgColor;
+        });
+    });
+});
+
+
