@@ -810,6 +810,9 @@ video {
 .max-w-\[105px\] {
   max-width: 105px;
 }
+.max-w-\[625\.55px\] {
+  max-width: 625.55px;
+}
 .translate-y-full {
   --tw-translate-y: 100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -908,6 +911,9 @@ video {
 }
 .gap-9 {
   gap: 2.25rem;
+}
+.gap-24 {
+  gap: 6rem;
 }
 .overflow-hidden {
   overflow: hidden;

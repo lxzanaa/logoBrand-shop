@@ -149,24 +149,73 @@
         </div>
     </section>
 
-    <section class="py-20" >
+    <section class="py-20">
         <div class="max-w-[1180px] mx-auto px-5 w-full">
-            <div>
-                <div class="flex gap-5" >
+            <h2 id="empty-message" class="text-4xl text-black font-bold uppercase mb-4 text-center hidden">cart is empty</h2>
+
+            <div class="flex items-center justify-between pb-12 border-b-[2px] border-b-[#BEBCBD]" data-item data-price="29">
+                <div class="flex gap-5">
                     <img class="max-w-[105px] w-full" src="./img/cart/1.png" alt="product">
                     <div>
-                        <h4 class="text-[#3C4242] font-semibold text-lg leading-6 mb-2" >Blue Flower Print Crop Top</h4>
-                        <i class="text-[#807D7E] text-sm font-light mb-1" >Color : Yellow</i> <br>
-                        <i class="text-[#807D7E] text-sm font-light" >Size : M</i>
+                        <h4 class="text-[#3C4242] font-semibold text-lg leading-6 mb-2">Blue Flower Print Crop Top</h4>
+                        <i class="text-[#807D7E] text-sm font-light mb-1">Color: Yellow</i> <br>
+                        <i class="text-[#807D7E] text-sm font-light">Size: M</i>
                     </div>
                 </div>
-                <div class="" >
-                    <h3>$29.00</h3>
-                    <div class="inline-flex items-center gap-4 py-2.5 px-6 rounded-xl bg-[#F6F6F6]" >
-                        <i class="fa-solid fa-minus active:opacity-80 cursor-pointer" ></i>
-                        <i>1</i>
-                        <i class="fa-solid fa-plus active:opacity-80 cursor-pointer"></i>
+                <div class="flex items-center gap-[78px]">
+                    <h3 class="text-[#3C4242] font-bold text-lg">$29.00</h3>
+                    <div class="inline-flex items-center gap-4 py-2.5 px-6 rounded-xl bg-[#F6F6F6]" data-counter>
+                        <i class="fa-solid fa-minus active:opacity-70 cursor-pointer" data-action="decrement"></i>
+                        <i class="counter-value">1</i>
+                        <i class="fa-solid fa-plus active:opacity-70 cursor-pointer" data-action="increment"></i>
                     </div>
+                    <h3 class="text-[#BEBCBD] font-bold uppercase text-lg">FREE</h3>
+                    <h3 class="text-[#3C4242] font-bold text-lg total-price">$29.00</h3>
+                    <button class="fa-solid fa-trash-can cursor-pointer active:opacity-80 text-[#3F4E9B] pr-4" data-action="remove"></button>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between pb-12 border-b-[2px] border-b-[#BEBCBD]" data-item data-price="29">
+                <div class="flex gap-5">
+                    <img class="max-w-[105px] w-full" src="./img/cart/1.png" alt="product">
+                    <div>
+                        <h4 class="text-[#3C4242] font-semibold text-lg leading-6 mb-2">Blue Flower Print Crop Top</h4>
+                        <i class="text-[#807D7E] text-sm font-light mb-1">Color: Yellow</i> <br>
+                        <i class="text-[#807D7E] text-sm font-light">Size: M</i>
+                    </div>
+                </div>
+                <div class="flex items-center gap-[78px]">
+                    <h3 class="text-[#3C4242] font-bold text-lg">$29.00</h3>
+                    <div class="inline-flex items-center gap-4 py-2.5 px-6 rounded-xl bg-[#F6F6F6]" data-counter>
+                        <i class="fa-solid fa-minus active:opacity-70 cursor-pointer" data-action="decrement"></i>
+                        <i class="counter-value">1</i>
+                        <i class="fa-solid fa-plus active:opacity-70 cursor-pointer" data-action="increment"></i>
+                    </div>
+                    <h3 class="text-[#BEBCBD] font-bold uppercase text-lg">FREE</h3>
+                    <h3 class="text-[#3C4242] font-bold text-lg total-price">$29.00</h3>
+                    <button class="fa-solid fa-trash-can cursor-pointer active:opacity-80 text-[#3F4E9B] pr-4" data-action="remove"></button>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between pb-12 border-b-[2px] border-b-[#BEBCBD]" data-item data-price="29">
+                <div class="flex gap-5">
+                    <img class="max-w-[105px] w-full" src="./img/cart/1.png" alt="product">
+                    <div>
+                        <h4 class="text-[#3C4242] font-semibold text-lg leading-6 mb-2">Blue Flower Print Crop Top</h4>
+                        <i class="text-[#807D7E] text-sm font-light mb-1">Color: Yellow</i> <br>
+                        <i class="text-[#807D7E] text-sm font-light">Size: M</i>
+                    </div>
+                </div>
+                <div class="flex items-center gap-[78px]">
+                    <h3 class="text-[#3C4242] font-bold text-lg">$29.00</h3>
+                    <div class="inline-flex items-center gap-4 py-2.5 px-6 rounded-xl bg-[#F6F6F6]" data-counter>
+                        <i class="fa-solid fa-minus active:opacity-70 cursor-pointer" data-action="decrement"></i>
+                        <i class="counter-value">1</i>
+                        <i class="fa-solid fa-plus active:opacity-70 cursor-pointer" data-action="increment"></i>
+                    </div>
+                    <h3 class="text-[#BEBCBD] font-bold uppercase text-lg">FREE</h3>
+                    <h3 class="text-[#3C4242] font-bold text-lg total-price">$29.00</h3>
+                    <button class="fa-solid fa-trash-can cursor-pointer active:opacity-80 text-[#3F4E9B] pr-4" data-action="remove"></button>
                 </div>
             </div>
         </div>
@@ -306,6 +355,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="./js/app.js"></script>
+    <script src="./js/counter.js"></script>
 </body>
 
 </html>
