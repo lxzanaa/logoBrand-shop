@@ -646,6 +646,9 @@ video {
 .mt-40 {
   margin-top: 10rem;
 }
+.mb-0 {
+  margin-bottom: 0px;
+}
 .block {
   display: block;
 }
@@ -684,6 +687,9 @@ video {
 }
 .h-\[637px\] {
   height: 637px;
+}
+.h-\[70px\] {
+  height: 70px;
 }
 .h-\[780px\] {
   height: 780px;
@@ -736,11 +742,17 @@ video {
 .w-\[500px\] {
   width: 500px;
 }
+.w-\[70px\] {
+  width: 70px;
+}
 .w-\[97px\] {
   width: 97px;
 }
 .w-full {
   width: 100%;
+}
+.w-\[80px\] {
+  width: 80px;
 }
 .max-w-\[105px\] {
   max-width: 105px;
@@ -780,6 +792,9 @@ video {
 }
 .max-w-\[466px\] {
   max-width: 466px;
+}
+.max-w-\[50px\] {
+  max-width: 50px;
 }
 .max-w-\[514px\] {
   max-width: 514px;
@@ -1247,6 +1262,9 @@ video {
 }
 .pt-\[220px\] {
   padding-top: 220px;
+}
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 .text-center {
   text-align: center;
@@ -1726,12 +1744,20 @@ input[type="range"]::-webkit-slider-thumb {
     margin-bottom: 0px;
   }
 
+  .md\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
   .md\:mb-16 {
     margin-bottom: 4rem;
   }
 
   .md\:mb-4 {
     margin-bottom: 1rem;
+  }
+
+  .md\:mb-2 {
+    margin-bottom: 0.5rem;
   }
 
   .md\:block {
@@ -1752,6 +1778,14 @@ input[type="range"]::-webkit-slider-thumb {
 
   .md\:h-full {
     height: 100%;
+  }
+
+  .md\:max-h-\[100px\] {
+    max-height: 100px;
+  }
+
+  .md\:max-w-\[105px\] {
+    max-width: 105px;
   }
 
   .md\:max-w-\[1180px\] {
@@ -1844,6 +1878,10 @@ input[type="range"]::-webkit-slider-thumb {
 
   .md\:pb-44 {
     padding-bottom: 11rem;
+  }
+
+  .md\:pb-5 {
+    padding-bottom: 1.25rem;
   }
 
   .md\:pr-0 {
@@ -1942,6 +1980,10 @@ input[type="range"]::-webkit-slider-thumb {
     display: none;
   }
 
+  .lg\:h-\[120px\] {
+    height: 120px;
+  }
+
   .lg\:max-w-\[1180px\] {
     max-width: 1180px;
   }
@@ -1966,6 +2008,10 @@ input[type="range"]::-webkit-slider-thumb {
     padding-bottom: 4rem;
   }
 
+  .lg\:pb-12 {
+    padding-bottom: 3rem;
+  }
+
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1974,5 +2020,10 @@ input[type="range"]::-webkit-slider-thumb {
   .lg\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
