@@ -19,100 +19,100 @@
 <body>
     <header id="header" class="py-6">
         <div class="max-w-[1180px] mx-auto px-5 w-full  flex justify-between">
-            <a class="text-[#1E2832] font-sans font-bold text-2xl leading-[32.68px] flex items-center"
-                href="index.html">LogoBrand</a>
-            <div class="flex items-center">
-                <ul class="hidden gap-14 items-center lg:flex">
-                    <li><a id="header__link"
-                            class=" text-[#1E283280] font-sans font-semibold text-base leading-[21.79px] border-b-[2px] pb-1 border-b-transparent"
-                            href="index.html">Home</a></li>
-                    <li><a id="header__link"
-                            class="header__active text-[#1E283280] font-sans font-semibold text-base leading-[21.79px] border-b-[2px] pb-1 border-b-transparent"
-                            href="product.html ">Products</a></li>
-                    <li><a id="header__link"
-                            class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px] border-b-[2px] pb-1 border-b-transparent"
-                            href="about.html">About</a></li>
-                    <li><a id="header__link"
-                            class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px] border-b-[2px] pb-1 border-b-transparent"
-                            href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="flex items-center gap-8 relative">
-
-                <div class="flex items-center gap-0 relative active:opacity-80" id="search-button">
-                    <input name="search-input" type="text" id="search-input" placeholder="Search..."
-                        class="text-[#8A8A8A] font-sans text-base leading-7 absolute left-[-110px] hidden w-36 outline-none -z-20 border py-2 pl-3 pr-8 rounded-2xl">
-                    <svg class="md:hidden block" width="27" height="27" viewBox="0 0 27 27" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M17.4375 15.75H16.5488L16.2338 15.4463C17.3744 14.1233 18.0012 12.4343 18 10.6875C18 9.24123 17.5711 7.82743 16.7676 6.6249C15.9641 5.42236 14.8221 4.4851 13.4859 3.93163C12.1497 3.37817 10.6794 3.23336 9.2609 3.51551C7.84242 3.79767 6.53946 4.49411 5.51678 5.51678C4.49411 6.53946 3.79767 7.84242 3.51551 9.2609C3.23336 10.6794 3.37817 12.1497 3.93163 13.4859C4.4851 14.8221 5.42236 15.9641 6.6249 16.7676C7.82743 17.5711 9.24123 18 10.6875 18C12.4988 18 14.1638 17.3363 15.4463 16.2338L15.75 16.5488V17.4375L21.375 23.0513L23.0513 21.375L17.4375 15.75ZM10.6875 15.75C7.88625 15.75 5.625 13.4888 5.625 10.6875C5.625 7.88625 7.88625 5.625 10.6875 5.625C13.4888 5.625 15.75 7.88625 15.75 10.6875C15.75 13.4888 13.4888 15.75 10.6875 15.75Z"
-                            fill="#1E2832" />
-                    </svg>
-
-                    <button class="md:flex hidden items-center gap-4">
-                        <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M17.4375 15.75H16.5488L16.2338 15.4463C17.3744 14.1233 18.0012 12.4343 18 10.6875C18 9.24123 17.5711 7.82743 16.7676 6.6249C15.9641 5.42236 14.8221 4.4851 13.4859 3.93163C12.1497 3.37817 10.6794 3.23336 9.2609 3.51551C7.84242 3.79767 6.53946 4.49411 5.51678 5.51678C4.49411 6.53946 3.79767 7.84242 3.51551 9.2609C3.23336 10.6794 3.37817 12.1497 3.93163 13.4859C4.4851 14.8221 5.42236 15.9641 6.6249 16.7676C7.82743 17.5711 9.24123 18 10.6875 18C12.4988 18 14.1638 17.3363 15.4463 16.2338L15.75 16.5488V17.4375L21.375 23.0513L23.0513 21.375L17.4375 15.75ZM10.6875 15.75C7.88625 15.75 5.625 13.4888 5.625 10.6875C5.625 7.88625 7.88625 5.625 10.6875 5.625C13.4888 5.625 15.75 7.88625 15.75 10.6875C15.75 13.4888 13.4888 15.75 10.6875 15.75Z"
-                                fill="#1E2832" />
-                        </svg>
-                        Search
-                    </button>
-
-                </div>
-                <button id="mobile-menu-toggle" class="md:hidden block cursor-pointer active:opacity-75">
-                    <i class="fa-solid fa-bars flex"></i>
-                </button>
-
-                <a class="md:flex hidden items-center gap-8 hover:opacity-80 " href="#">
-                    <span>
-                        <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M8.80312 23.625H5.625V10.575L3.57187 5.625H1.125V3.375H5.09063L6.94688 7.875H25.3969L21.375 15.7781C22.3312 15.9281 23.133 16.3687 23.7803 17.1C24.4268 17.8313 24.75 18.6938 24.75 19.6875C24.75 20.775 24.3705 21.7031 23.6115 22.4719C22.8518 23.2406 21.9281 23.625 20.8406 23.625C19.7344 23.625 18.8018 23.2406 18.0427 22.4719C17.283 21.7031 16.9031 20.775 16.9031 19.6875C16.9031 19.3125 16.95 18.9656 17.0437 18.6469C17.1375 18.3281 17.2687 18.0188 17.4375 17.7188L13.7531 17.3812L8.80312 23.625ZM18.9563 15.6094L21.7406 10.125L7.875 10.1531L9.81563 14.7656L18.9563 15.6094ZM7.875 15.4125V21.3469L11.2219 17.1562L8.49375 16.9031L7.875 15.4125ZM20.8125 21.375C21.3 21.375 21.7031 21.2108 22.0219 20.8822C22.3406 20.5545 22.5 20.1562 22.5 19.6875C22.5 19.2 22.3406 18.7969 22.0219 18.4781C21.7031 18.1594 21.3 18 20.8125 18C20.3438 18 19.9455 18.1594 19.6178 18.4781C19.2892 18.7969 19.125 19.2 19.125 19.6875C19.125 20.1562 19.2892 20.5545 19.6178 20.8822C19.9455 21.2108 20.3438 21.375 20.8125 21.375ZM18.9563 15.6094L9.81563 14.7656L18.9563 15.6094Z"
-                                fill="#1E2832" />
-                        </svg>
-                    </span>
-                    Cart</a>
-                <button
-                    class="btn__hover py-3 px-8 text-white font-sans font-semibold text-lg leading-[26.01px] bg-[#1E2832] md:inline-flex hidden rounded-3xl border-[#1E2832] border">Get
-                    started</button>
-            </div>
-
-        </div>
-
-        <div id="mobile-menu"
-            class="fixed transition-all -left-full bg-white h-full py-6 md:hidden top-0 w-full text-center  px-5 z-20">
-            <div class="flex items-center justify-between mb-32">
-                <a class="text-[#1E2832] font-sans font-bold text-2xl leading-[32.68px] flex items-center"
-                    href="index.html">LogoBrand</a>
-                <button id="mobile-menu-close" class="md:hidden block cursor-pointer active:opacity-75">
-                    <i class="fa-solid fa-x flex ml-6"></i>
-                </button>
-            </div>
-            <ul class="flex flex-col items-center gap-10">
-                <li><a id="mobile__header" class=" text-[#1E283280] font-sans font-semibold text-base leading-[21.79px]"
-                        href="index.html">Home</a></li>
-                <li><a id="mobile__header"
-                        class="header__active text-[#1E283280] font-sans font-semibold text-base leading-[21.79px]"
-                        href="product.html">Products</a></li>
-                <li><a id="mobile__header" class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px]"
-                        href="about.html">About</a></li>
-                <li><a id="mobile__header" class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px]"
-                        href="contact.html">Contact</a></li>
+          <a class="text-[#1E2832] font-sans font-bold text-2xl leading-[32.68px] flex items-center"
+            href="index.html">LogoBrand</a>
+          <div class="flex items-center">
+            <ul class="hidden gap-14 items-center lg:flex">
+              <li><a id="header__link"
+                  class=" text-[#1E283280] font-sans font-semibold text-base leading-[21.79px] border-b-[2px] pb-1 border-b-transparent"
+                  href="index.html">Home</a></li>
+              <li><a id="header__link"
+                  class="header__active text-[#1E283280] font-sans font-semibold text-base leading-[21.79px] border-b-[2px] pb-1 border-b-transparent"
+                  href="product.html">Products</a></li>
+              <li><a id="header__link"
+                  class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px] border-b-[2px] pb-1 border-b-transparent"
+                  href="about.html">About</a></li>
+              <li><a id="header__link"
+                  class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px] border-b-[2px] pb-1 border-b-transparent"
+                  href="contact.html">Contact</a></li>
             </ul>
-            <div class="mt-40 w-full flex flex-col">
-                <a class="btn__hover py-3 px-8 text-white font-sans font-semibold text-lg leading-[26.01px] bg-[#1E2832] flex gap-3 justify-center rounded-3xl border-[#1E2832] border mb-4"
-                    href="#">
-                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M8.80312 23.625H5.625V10.575L3.57187 5.625H1.125V3.375H5.09063L6.94688 7.875H25.3969L21.375 15.7781C22.3312 15.9281 23.133 16.3687 23.7803 17.1C24.4268 17.8313 24.75 18.6938 24.75 19.6875C24.75 20.775 24.3705 21.7031 23.6115 22.4719C22.8518 23.2406 21.9281 23.625 20.8406 23.625C19.7344 23.625 18.8018 23.2406 18.0427 22.4719C17.283 21.7031 16.9031 20.775 16.9031 19.6875C16.9031 19.3125 16.95 18.9656 17.0437 18.6469C17.1375 18.3281 17.2687 18.0188 17.4375 17.7188L13.7531 17.3812L8.80312 23.625ZM18.9563 15.6094L21.7406 10.125L7.875 10.1531L9.81563 14.7656L18.9563 15.6094ZM7.875 15.4125V21.3469L11.2219 17.1562L8.49375 16.9031L7.875 15.4125ZM20.8125 21.375C21.3 21.375 21.7031 21.2108 22.0219 20.8822C22.3406 20.5545 22.5 20.1562 22.5 19.6875C22.5 19.2 22.3406 18.7969 22.0219 18.4781C21.7031 18.1594 21.3 18 20.8125 18C20.3438 18 19.9455 18.1594 19.6178 18.4781C19.2892 18.7969 19.125 19.2 19.125 19.6875C19.125 20.1562 19.2892 20.5545 19.6178 20.8822C19.9455 21.2108 20.3438 21.375 20.8125 21.375ZM18.9563 15.6094L9.81563 14.7656L18.9563 15.6094Z"
-                            fill="currentColor" />
-                    </svg> Cart</a>
-                <button
-                    class="btn__hover py-3 px-8 text-white font-sans font-semibold text-lg leading-[26.01px] bg-[#1E2832] flex justify-center rounded-3xl border-[#1E2832] border">Get
-                    started</button>
+          </div>
+          <div class="flex items-center gap-8 relative">
+    
+            <div class="flex items-center gap-0 relative active:opacity-80" id="search-button">
+              <input name="search-input" type="text" id="search-input" placeholder="Search..."
+                class="text-[#8A8A8A] font-sans text-base leading-7 absolute left-[-110px] hidden w-36 outline-none -z-20 border py-2 pl-3 pr-8 rounded-2xl">
+              <svg class="md:hidden block" width="27" height="27" viewBox="0 0 27 27" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.4375 15.75H16.5488L16.2338 15.4463C17.3744 14.1233 18.0012 12.4343 18 10.6875C18 9.24123 17.5711 7.82743 16.7676 6.6249C15.9641 5.42236 14.8221 4.4851 13.4859 3.93163C12.1497 3.37817 10.6794 3.23336 9.2609 3.51551C7.84242 3.79767 6.53946 4.49411 5.51678 5.51678C4.49411 6.53946 3.79767 7.84242 3.51551 9.2609C3.23336 10.6794 3.37817 12.1497 3.93163 13.4859C4.4851 14.8221 5.42236 15.9641 6.6249 16.7676C7.82743 17.5711 9.24123 18 10.6875 18C12.4988 18 14.1638 17.3363 15.4463 16.2338L15.75 16.5488V17.4375L21.375 23.0513L23.0513 21.375L17.4375 15.75ZM10.6875 15.75C7.88625 15.75 5.625 13.4888 5.625 10.6875C5.625 7.88625 7.88625 5.625 10.6875 5.625C13.4888 5.625 15.75 7.88625 15.75 10.6875C15.75 13.4888 13.4888 15.75 10.6875 15.75Z"
+                  fill="#1E2832" />
+              </svg>
+    
+              <button class="md:flex hidden items-center gap-4">
+                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.4375 15.75H16.5488L16.2338 15.4463C17.3744 14.1233 18.0012 12.4343 18 10.6875C18 9.24123 17.5711 7.82743 16.7676 6.6249C15.9641 5.42236 14.8221 4.4851 13.4859 3.93163C12.1497 3.37817 10.6794 3.23336 9.2609 3.51551C7.84242 3.79767 6.53946 4.49411 5.51678 5.51678C4.49411 6.53946 3.79767 7.84242 3.51551 9.2609C3.23336 10.6794 3.37817 12.1497 3.93163 13.4859C4.4851 14.8221 5.42236 15.9641 6.6249 16.7676C7.82743 17.5711 9.24123 18 10.6875 18C12.4988 18 14.1638 17.3363 15.4463 16.2338L15.75 16.5488V17.4375L21.375 23.0513L23.0513 21.375L17.4375 15.75ZM10.6875 15.75C7.88625 15.75 5.625 13.4888 5.625 10.6875C5.625 7.88625 7.88625 5.625 10.6875 5.625C13.4888 5.625 15.75 7.88625 15.75 10.6875C15.75 13.4888 13.4888 15.75 10.6875 15.75Z"
+                    fill="#1E2832" />
+                </svg>
+                Search
+              </button>
+    
             </div>
+            <button id="mobile-menu-toggle" class="md:hidden block cursor-pointer active:opacity-75">
+              <i class="fa-solid fa-bars flex"></i>
+            </button>
+    
+            <a class="md:flex hidden items-center gap-8 hover:opacity-80 " href="cart.html">
+              <span>
+                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.80312 23.625H5.625V10.575L3.57187 5.625H1.125V3.375H5.09063L6.94688 7.875H25.3969L21.375 15.7781C22.3312 15.9281 23.133 16.3687 23.7803 17.1C24.4268 17.8313 24.75 18.6938 24.75 19.6875C24.75 20.775 24.3705 21.7031 23.6115 22.4719C22.8518 23.2406 21.9281 23.625 20.8406 23.625C19.7344 23.625 18.8018 23.2406 18.0427 22.4719C17.283 21.7031 16.9031 20.775 16.9031 19.6875C16.9031 19.3125 16.95 18.9656 17.0437 18.6469C17.1375 18.3281 17.2687 18.0188 17.4375 17.7188L13.7531 17.3812L8.80312 23.625ZM18.9563 15.6094L21.7406 10.125L7.875 10.1531L9.81563 14.7656L18.9563 15.6094ZM7.875 15.4125V21.3469L11.2219 17.1562L8.49375 16.9031L7.875 15.4125ZM20.8125 21.375C21.3 21.375 21.7031 21.2108 22.0219 20.8822C22.3406 20.5545 22.5 20.1562 22.5 19.6875C22.5 19.2 22.3406 18.7969 22.0219 18.4781C21.7031 18.1594 21.3 18 20.8125 18C20.3438 18 19.9455 18.1594 19.6178 18.4781C19.2892 18.7969 19.125 19.2 19.125 19.6875C19.125 20.1562 19.2892 20.5545 19.6178 20.8822C19.9455 21.2108 20.3438 21.375 20.8125 21.375ZM18.9563 15.6094L9.81563 14.7656L18.9563 15.6094Z"
+                    fill="#1E2832" />
+                </svg>
+              </span>
+              Cart</a>
+            <button
+              class="btn__hover py-3 px-8 text-white font-sans font-semibold text-lg leading-[26.01px] bg-[#1E2832] md:inline-flex hidden rounded-3xl border-[#1E2832] border">Get
+              started</button>
+          </div>
+    
         </div>
-    </header>
+    
+        <div id="mobile-menu"
+          class="fixed transition-all -left-full bg-white h-full py-6 md:hidden top-0 w-full text-center  px-5 z-20">
+          <div class="flex items-center justify-between mb-32">
+            <a class="text-[#1E2832] font-sans font-bold text-2xl leading-[32.68px] flex items-center"
+              href="index.html">LogoBrand</a>
+            <button id="mobile-menu-close" class="md:hidden block cursor-pointer active:opacity-75">
+              <i class="fa-solid fa-x flex ml-6"></i>
+            </button>
+          </div>
+          <ul class="flex flex-col items-center gap-10">
+            <li><a id="mobile__header"
+                class="header__active text-[#1E283280] font-sans font-semibold text-base leading-[21.79px]"
+                href="index.html">Home</a></li>
+            <li><a id="mobile__header" class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px]"
+                href="product.html">Products</a></li>
+            <li><a id="mobile__header" class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px]"
+                href="about.html">About</a></li>
+            <li><a id="mobile__header" class="text-[#1E283280] font-sans font-semibold text-base leading-[21.79px]"
+                href="contact.html">Contact</a></li>
+          </ul>
+          <div class="mt-40 w-full flex flex-col">
+            <a class="btn__hover py-3 px-8 text-white font-sans font-semibold text-lg leading-[26.01px] bg-[#1E2832] flex gap-3 justify-center rounded-3xl border-[#1E2832] border mb-4"
+              href="#">
+              <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.80312 23.625H5.625V10.575L3.57187 5.625H1.125V3.375H5.09063L6.94688 7.875H25.3969L21.375 15.7781C22.3312 15.9281 23.133 16.3687 23.7803 17.1C24.4268 17.8313 24.75 18.6938 24.75 19.6875C24.75 20.775 24.3705 21.7031 23.6115 22.4719C22.8518 23.2406 21.9281 23.625 20.8406 23.625C19.7344 23.625 18.8018 23.2406 18.0427 22.4719C17.283 21.7031 16.9031 20.775 16.9031 19.6875C16.9031 19.3125 16.95 18.9656 17.0437 18.6469C17.1375 18.3281 17.2687 18.0188 17.4375 17.7188L13.7531 17.3812L8.80312 23.625ZM18.9563 15.6094L21.7406 10.125L7.875 10.1531L9.81563 14.7656L18.9563 15.6094ZM7.875 15.4125V21.3469L11.2219 17.1562L8.49375 16.9031L7.875 15.4125ZM20.8125 21.375C21.3 21.375 21.7031 21.2108 22.0219 20.8822C22.3406 20.5545 22.5 20.1562 22.5 19.6875C22.5 19.2 22.3406 18.7969 22.0219 18.4781C21.7031 18.1594 21.3 18 20.8125 18C20.3438 18 19.9455 18.1594 19.6178 18.4781C19.2892 18.7969 19.125 19.2 19.125 19.6875C19.125 20.1562 19.2892 20.5545 19.6178 20.8822C19.9455 21.2108 20.3438 21.375 20.8125 21.375ZM18.9563 15.6094L9.81563 14.7656L18.9563 15.6094Z"
+                  fill="currentColor" />
+              </svg> Cart</a>
+            <button
+              class="btn__hover py-3 px-8 text-white font-sans font-semibold text-lg leading-[26.01px] bg-[#1E2832] flex justify-center rounded-3xl border-[#1E2832] border">Get
+              started</button>
+          </div>
+        </div>
+      </header>
 
 
     <section class="pt-7">
@@ -131,7 +131,8 @@
                 </div>
 
 
-                <div id="container__imgHover" class="overflow-hidden md:block hidden w-[500px] h-[780px] object-cover">
+                <div id="container__imgHover"
+                    class="overflow-hidden md:block hidden w-[500px] h-[780px] object-cover cursor-zoom-in">
                     <img id="shop__section-main-image" class="w-[500px] h-[780px] flex object-cover"
                         src="./img/shop/main.png" alt="main img">
                 </div>
@@ -302,10 +303,12 @@
                     </li>
                     <li><button
                             class="change_border_btn text-[#807D7E] font-sans font-normal text-lg leading-6 border-b-transparent border-b pb-4 flex gap-1 items-center">User
-                            comments <span class="py-1 px-3 rounded-md text-white bg-[#3F4E9B] inline-flex" >2</span></button></li>
+                            comments <span
+                                class="py-1 px-3 rounded-md text-white bg-[#3F4E9B] inline-flex">2</span></button></li>
                     <li><button
                             class="change_border_btn text-[#807D7E] font-sans font-normal text-lg leading-6 border-b-transparent border-b pb-4 flex gap-1 items-center">Question
-                            & Answer <span class="py-1 px-3 rounded-md text-white bg-[#3C4242] inline-flex" >4</span></button></li>
+                            & Answer <span
+                                class="py-1 px-3 rounded-md text-white bg-[#3C4242] inline-flex">4</span></button></li>
                 </ul>
                 <select class="mb-7 md:hidden block">
                     <option>Description</option>
