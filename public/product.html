@@ -528,420 +528,422 @@
       </aside>
 
       <aside id="aside_menu"
-        class="max-w-[295px] w-full overflow-scroll  border-[#BEBCBD] border-r border-l border-b fixed top-0 z-20 bg-white  transition-all -left-[295px] lg:hidden">
+        class="max-w-[295px] w-full  border-[#BEBCBD] border-r border-l border-b fixed top-0 z-20 bg-white  transition-all -left-[295px] lg:hidden">
+       <div class="max-w-[295px] w-full h-screen overflow-y-auto" >
         <button
-          class="open__aside lg:hidden block absolute right-[-38.5px] top-16 md:top-20 fa-solid fa-x p-3 border rounded-e-lg"></button>
-        <div class="flex items-center justify-between border-b px-8 py-5">
-          <h3 class="text-[#807D7E] font-sans font-semibold text-2xl leading-7">Filter</h3>
-          <button class="text-[#807D7E]">
-            <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M2.83333 6.33333L2.83333 1.75M2.83333 18.25L2.83333 10M13.8333 18.25L13.8333 10M8.33333 18.25V13.6667M8.33333 10V1.75M13.8333 6.33333L13.8333 1.75M1 6.33333H4.66667M6.5 13.6667H10.1667M12 6.33333L15.6667 6.33333"
-                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-            </svg>
-          </button>
-        </div>
+        class="open__aside lg:hidden block absolute right-[-38.5px] top-16 md:top-20 fa-solid fa-x p-3 border rounded-e-lg"></button>
+      <div class="flex items-center justify-between border-b px-8 py-5">
+        <h3 class="text-[#807D7E] font-sans font-semibold text-2xl leading-7">Filter</h3>
+        <button class="text-[#807D7E]">
+          <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.83333 6.33333L2.83333 1.75M2.83333 18.25L2.83333 10M13.8333 18.25L13.8333 10M8.33333 18.25V13.6667M8.33333 10V1.75M13.8333 6.33333L13.8333 1.75M1 6.33333H4.66667M6.5 13.6667H10.1667M12 6.33333L15.6667 6.33333"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
 
-        <div class="border-b pt-10 pb-6 pl-8 pr-8">
+      <div class="border-b pt-10 pb-6 pl-8 pr-8">
 
-          <div class="overflow-hidden">
-            <div id="button_active" class="flex items-center justify-between mb-5">
-              <h3 class="text-[#8A8989] font-sans font-semibold text-base leading-5">Tops</h3>
-              <button class="text-[#8A8989]  button_rotate transition-all">
-                <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
-                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-                </svg>
-              </button>
-            </div>
-            <ul id="active_list" class="flex flex-col gap-3 h-0 transition-all">
-              <li
-                class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
-                Women's</li>
-              <li
-                class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
-                Men's</li>
-              <li
-                class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
-                Children's</li>
-            </ul>
+        <div class="overflow-hidden">
+          <div id="button_active" class="flex items-center justify-between mb-5">
+            <h3 class="text-[#8A8989] font-sans font-semibold text-base leading-5">Tops</h3>
+            <button class="text-[#8A8989]  button_rotate transition-all">
+              <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg>
+            </button>
           </div>
-
-          <div class="overflow-hidden">
-            <div id="button_active" class="flex items-center justify-between mb-5">
-              <h3 class="text-[#8A8989] font-sans font-semibold text-base leading-5">Tops</h3>
-              <button class="text-[#8A8989]  button_rotate transition-all">
-                <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
-                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-                </svg>
-              </button>
-            </div>
-            <ul id="active_list" class="flex flex-col gap-3 h-0 transition-all">
-              <li
-                class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
-                Women's</li>
-              <li
-                class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
-                Men's</li>
-              <li
-                class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
-                Children's</li>
-            </ul>
-          </div>
-
-          <div class="overflow-hidden">
-            <div id="button_active" class="flex items-center justify-between mb-5">
-              <h3 class="text-[#8A8989] font-sans font-semibold text-base leading-5">Tops</h3>
-              <button class="text-[#8A8989]  button_rotate transition-all">
-                <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
-                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-                </svg>
-              </button>
-            </div>
-            <ul id="active_list" class="flex flex-col gap-3 h-0 transition-all">
-              <li
-                class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
-                Women's</li>
-              <li
-                class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
-                Men's</li>
-              <li
-                class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
-                Children's</li>
-            </ul>
-          </div>
-
-          <div class="overflow-hidden">
-            <div id="button_active" class="flex items-center justify-between mb-5">
-              <h3 class="text-[#8A8989] font-sans font-semibold text-base leading-5">Tops</h3>
-              <button class="text-[#8A8989]  button_rotate transition-all">
-                <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
-                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-                </svg>
-              </button>
-            </div>
-            <ul id="active_list" class="flex flex-col gap-3 h-0 transition-all">
-              <li
-                class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
-                Women's</li>
-              <li
-                class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
-                Men's</li>
-              <li
-                class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
-                Children's</li>
-            </ul>
-          </div>
-
-          <div class="overflow-hidden">
-            <div id="button_active" class="flex items-center justify-between mb-5">
-              <h3 class="text-[#8A8989] font-sans font-semibold text-base leading-5">Tops</h3>
-              <button class="text-[#8A8989]  button_rotate transition-all">
-                <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
-                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-                </svg>
-              </button>
-            </div>
-            <ul id="active_list" class="flex flex-col gap-3 h-0 transition-all">
-              <li
-                class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
-                Women's</li>
-              <li
-                class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
-                Men's</li>
-              <li
-                class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
-                Children's</li>
-            </ul>
-          </div>
-
-          <div class="overflow-hidden">
-            <div id="button_active" class="flex items-center justify-between mb-5">
-              <h3 class="text-[#8A8989] font-sans font-semibold text-base leading-5">Tops</h3>
-              <button class="text-[#8A8989]  button_rotate transition-all">
-                <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
-                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-                </svg>
-              </button>
-            </div>
-            <ul id="active_list" class="flex flex-col gap-3 h-0 transition-all">
-              <li
-                class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
-                Women's</li>
-              <li
-                class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
-                Men's</li>
-              <li
-                class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
-                Children's</li>
-            </ul>
-          </div>
-
-          <div class="overflow-hidden">
-            <div id="button_active" class="flex items-center justify-between mb-5">
-              <h3 class="text-[#8A8989] font-sans font-semibold text-base leading-5">Tops</h3>
-              <button class="text-[#8A8989]  button_rotate transition-all">
-                <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
-                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-                </svg>
-              </button>
-            </div>
-            <ul id="active_list" class="flex flex-col gap-3 h-0 transition-all">
-              <li
-                class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
-                Women's</li>
-              <li
-                class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
-                Men's</li>
-              <li
-                class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
-                Children's</li>
-            </ul>
-          </div>
-
-          <div class="overflow-hidden">
-            <div id="button_active" class="flex items-center justify-between mb-5">
-              <h3 class="text-[#8A8989] font-sans font-semibold text-base leading-5">Tops</h3>
-              <button class="text-[#8A8989]  button_rotate transition-all">
-                <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
-                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-                </svg>
-              </button>
-            </div>
-            <ul id="active_list" class="flex flex-col gap-3 h-0 transition-all">
-              <li
-                class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
-                Women's</li>
-              <li
-                class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
-                Men's</li>
-              <li
-                class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
-                Children's</li>
-            </ul>
-          </div>
-
-          <div class="overflow-hidden">
-            <div id="button_active" class="flex items-center justify-between mb-5">
-              <h3 class="text-[#8A8989] font-sans font-semibold text-base leading-5">Tops</h3>
-              <button class="text-[#8A8989]  button_rotate transition-all">
-                <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
-                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-                </svg>
-              </button>
-            </div>
-            <ul id="active_list" class="flex flex-col gap-3 h-0 transition-all">
-              <li
-                class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
-                Women's</li>
-              <li
-                class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
-                Men's</li>
-              <li
-                class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
-                Children's</li>
-            </ul>
-          </div>
-
-        </div>
-
-        <div id="open_range" class="flex items-center justify-between border-b px-8 py-5 cursor-pointer">
-          <h3 class="text-[#807D7E] font-sans font-semibold text-2xl leading-7">Price</h3>
-          <button id="button_range" class="text-[#8A8989] button_rotate rotate-0 transition-all">
-            <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
-                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-            </svg>
-          </button>
-        </div>
-
-        <div class="double__slider-box px-8 h-0 overflow-hidden transition-all">
-          <div class="range__slider">
-            <span class="slider-track"></span>
-            <input type="range" name="min-val" class="min-val" min="100" max="10000" value="3000" oninput="slideMin()">
-            <input type="range" name="max-val" class="max-val" min="100" max="10000" value="7000" oninput="slideMax()">
-          </div>
-          <div class="flex items-center justify-between">
-            <div class="min-box">
-              <div class="input-wrap">
-                <input type="text" name="min_input"
-                  class="input-field italic font-light text-base leading-5 rounded-lg text-[#3C4242] relative border py-2 min-input w-[97px] text-center outline-none"
-                  onchange="setMinInput()">
-              </div>
-            </div>
-            <div class="max-box">
-              <div class="input-wrap">
-                <input type="text" name="max_input"
-                  class="input-field italic font-light text-base leading-5 rounded-lg text-[#3C4242] relative border py-2 max-input  w-[97px] text-center outline-none"
-                  onchange="setMaxInput()">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="open_range" class="flex items-center py-5 justify-between border-b px-8  cursor-pointer">
-          <h3 class="text-[#3C4242] font-sans font-semibold text-2xl leading-7">Colors</h3>
-          <button id="button_range" class="text-[#3C4242] button_rotate rotate-0 transition-all">
-            <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
-                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-            </svg>
-          </button>
-        </div>
-
-        <div class="double__slider-box px-8  h-0 overflow-hidden transition-all bg-[#EDEDED]/40">
-          <ul id="color-buttons" class="grid grid-cols-4 justify-center gap-5 py-10">
-            <li class="flex justify-center">
-              <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
-                <span class="color-span w-9 h-9 rounded-xl bg-[#8434E1]"></span>
-                <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Purple</p>
-              </button>
-            </li>
-            <li class="flex justify-center">
-              <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
-                <span class="color-span w-9 h-9 rounded-xl bg-black"></span>
-                <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Black</p>
-              </button>
-            </li>
-            <li class="flex justify-center">
-              <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
-                <span class="color-span w-9 h-9 rounded-xl bg-[#F35528]"></span>
-                <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Red</p>
-              </button>
-            </li>
-            <li class="flex justify-center">
-              <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
-                <span class="color-span w-9 h-9 rounded-xl bg-[#F16F2B]"></span>
-                <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Orange</p>
-              </button>
-            </li>
-            <li class="flex justify-center">
-              <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
-                <span class="color-span w-9 h-9 rounded-xl bg-[#345EFF]"></span>
-                <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Navy</p>
-              </button>
-            </li>
-            <li class="flex justify-center">
-              <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
-                <span class="color-span w-9 h-9 rounded-xl bg-white border"></span>
-                <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">White</p>
-              </button>
-            </li>
-            <li class="flex justify-center">
-              <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
-                <span class="color-span w-9 h-9 rounded-xl bg-[#D67E3B]"></span>
-                <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Broom</p>
-              </button>
-            </li>
-            <li class="flex justify-center">
-              <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
-                <span class="color-span w-9 h-9 rounded-xl bg-[#48BC4E]"></span>
-                <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Green</p>
-              </button>
-            </li>
-            <li class="flex justify-center">
-              <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
-                <span class="color-span w-9 h-9 rounded-xl bg-[#FDC761]"></span>
-                <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Yellow</p>
-              </button>
-            </li>
-            <li class="flex justify-center">
-              <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
-                <span class="color-span w-9 h-9 rounded-xl bg-[#E4E5E8]"></span>
-                <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Grey</p>
-              </button>
-            </li>
-            <li class="flex justify-center">
-              <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
-                <span class="color-span w-9 h-9 rounded-xl bg-[#E08D9D]"></span>
-                <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Pink</p>
-              </button>
-            </li>
-            <li class="flex justify-center">
-              <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
-                <span class="color-span w-9 h-9 rounded-xl bg-[#3FDEFF]"></span>
-                <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Blue</p>
-              </button>
-            </li>
+          <ul id="active_list" class="flex flex-col gap-3 h-0 transition-all">
+            <li
+              class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+              Women's</li>
+            <li
+              class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+              Men's</li>
+            <li
+              class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+              Children's</li>
           </ul>
         </div>
 
-        <div id="open_range" class="flex items-center justify-between border-b px-8 py-5 cursor-pointer">
-          <h3 class="text-[#807D7E] font-sans font-semibold text-2xl leading-7">Size</h3>
-          <button id="button_range" class="text-[#8A8989] button_rotate rotate-0 transition-all">
-            <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
-                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-            </svg>
-          </button>
-        </div>
-
-        <div class="double__slider-box px-8  h-0 overflow-hidden transition-all">
-          <ul id="size-buttons" class="grid grid-cols-3 gap-5 py-10">
+        <div class="overflow-hidden">
+          <div id="button_active" class="flex items-center justify-between mb-5">
+            <h3 class="text-[#8A8989] font-sans font-semibold text-base leading-5">Tops</h3>
+            <button class="text-[#8A8989]  button_rotate transition-all">
+              <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+          <ul id="active_list" class="flex flex-col gap-3 h-0 transition-all">
             <li
-              class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">
-              XXS</li>
+              class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+              Women's</li>
             <li
-              class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">
-              XL</li>
+              class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+              Men's</li>
             <li
-              class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">
-              XS</li>
-            <li
-              class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">
-              S</li>
-            <li
-              class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">
-              M</li>
-            <li
-              class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">
-              L</li>
-            <li
-              class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">
-              XXL</li>
-            <li
-              class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">
-              3XL</li>
-            <li
-              class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">
-              4XL</li>
+              class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+              Children's</li>
           </ul>
         </div>
 
-        <div id="open_range" class="flex items-center justify-between border-b px-8 py-5 cursor-pointer">
-          <h3 class="text-[#807D7E] font-sans font-semibold text-2xl leading-7">Dress Style</h3>
-          <button id="button_range" class="text-[#8A8989] button_rotate transition-all">
-            <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
-                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-            </svg>
-          </button>
-        </div>
-
-        <div class="double__slider-box px-8  h-0 overflow-hidden transition-all">
-          <ul id="size-buttons" class="grid grid-cols-2 gap-5 py-10">
+        <div class="overflow-hidden">
+          <div id="button_active" class="flex items-center justify-between mb-5">
+            <h3 class="text-[#8A8989] font-sans font-semibold text-base leading-5">Tops</h3>
+            <button class="text-[#8A8989]  button_rotate transition-all">
+              <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+          <ul id="active_list" class="flex flex-col gap-3 h-0 transition-all">
             <li
-              class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">
-              Long</li>
+              class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+              Women's</li>
             <li
-              class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">
-              Short</li>
+              class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+              Men's</li>
             <li
-              class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">
-              Tight</li>
-            <li
-              class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">
-              Wide</li>
+              class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+              Children's</li>
           </ul>
         </div>
+
+        <div class="overflow-hidden">
+          <div id="button_active" class="flex items-center justify-between mb-5">
+            <h3 class="text-[#8A8989] font-sans font-semibold text-base leading-5">Tops</h3>
+            <button class="text-[#8A8989]  button_rotate transition-all">
+              <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+          <ul id="active_list" class="flex flex-col gap-3 h-0 transition-all">
+            <li
+              class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+              Women's</li>
+            <li
+              class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+              Men's</li>
+            <li
+              class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+              Children's</li>
+          </ul>
+        </div>
+
+        <div class="overflow-hidden">
+          <div id="button_active" class="flex items-center justify-between mb-5">
+            <h3 class="text-[#8A8989] font-sans font-semibold text-base leading-5">Tops</h3>
+            <button class="text-[#8A8989]  button_rotate transition-all">
+              <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+          <ul id="active_list" class="flex flex-col gap-3 h-0 transition-all">
+            <li
+              class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+              Women's</li>
+            <li
+              class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+              Men's</li>
+            <li
+              class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+              Children's</li>
+          </ul>
+        </div>
+
+        <div class="overflow-hidden">
+          <div id="button_active" class="flex items-center justify-between mb-5">
+            <h3 class="text-[#8A8989] font-sans font-semibold text-base leading-5">Tops</h3>
+            <button class="text-[#8A8989]  button_rotate transition-all">
+              <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+          <ul id="active_list" class="flex flex-col gap-3 h-0 transition-all">
+            <li
+              class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+              Women's</li>
+            <li
+              class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+              Men's</li>
+            <li
+              class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+              Children's</li>
+          </ul>
+        </div>
+
+        <div class="overflow-hidden">
+          <div id="button_active" class="flex items-center justify-between mb-5">
+            <h3 class="text-[#8A8989] font-sans font-semibold text-base leading-5">Tops</h3>
+            <button class="text-[#8A8989]  button_rotate transition-all">
+              <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+          <ul id="active_list" class="flex flex-col gap-3 h-0 transition-all">
+            <li
+              class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+              Women's</li>
+            <li
+              class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+              Men's</li>
+            <li
+              class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+              Children's</li>
+          </ul>
+        </div>
+
+        <div class="overflow-hidden">
+          <div id="button_active" class="flex items-center justify-between mb-5">
+            <h3 class="text-[#8A8989] font-sans font-semibold text-base leading-5">Tops</h3>
+            <button class="text-[#8A8989]  button_rotate transition-all">
+              <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+          <ul id="active_list" class="flex flex-col gap-3 h-0 transition-all">
+            <li
+              class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+              Women's</li>
+            <li
+              class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+              Men's</li>
+            <li
+              class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+              Children's</li>
+          </ul>
+        </div>
+
+        <div class="overflow-hidden">
+          <div id="button_active" class="flex items-center justify-between mb-5">
+            <h3 class="text-[#8A8989] font-sans font-semibold text-base leading-5">Tops</h3>
+            <button class="text-[#8A8989]  button_rotate transition-all">
+              <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+          <ul id="active_list" class="flex flex-col gap-3 h-0 transition-all">
+            <li
+              class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+              Women's</li>
+            <li
+              class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+              Men's</li>
+            <li
+              class="cursor-pointer text-[#8A8989] font-sans font-semibold text-base leading-5 hover:opacity-70 border-b text-center">
+              Children's</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div id="open_range" class="flex items-center justify-between border-b px-8 py-5 cursor-pointer">
+        <h3 class="text-[#807D7E] font-sans font-semibold text-2xl leading-7">Price</h3>
+        <button id="button_range" class="text-[#8A8989] button_rotate rotate-0 transition-all">
+          <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="double__slider-box px-8 h-0 overflow-hidden transition-all">
+        <div class="range__slider">
+          <span class="slider-track"></span>
+          <input type="range" name="min-val" class="min-val" min="100" max="10000" value="3000" oninput="slideMin()">
+          <input type="range" name="max-val" class="max-val" min="100" max="10000" value="7000" oninput="slideMax()">
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="min-box">
+            <div class="input-wrap">
+              <input type="text" name="min_input"
+                class="input-field italic font-light text-base leading-5 rounded-lg text-[#3C4242] relative border py-2 min-input w-[97px] text-center outline-none"
+                onchange="setMinInput()">
+            </div>
+          </div>
+          <div class="max-box">
+            <div class="input-wrap">
+              <input type="text" name="max_input"
+                class="input-field italic font-light text-base leading-5 rounded-lg text-[#3C4242] relative border py-2 max-input  w-[97px] text-center outline-none"
+                onchange="setMaxInput()">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="open_range" class="flex items-center py-5 justify-between border-b px-8  cursor-pointer">
+        <h3 class="text-[#3C4242] font-sans font-semibold text-2xl leading-7">Colors</h3>
+        <button id="button_range" class="text-[#3C4242] button_rotate rotate-0 transition-all">
+          <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="double__slider-box px-8  h-0 overflow-hidden transition-all bg-[#EDEDED]/40">
+        <ul id="color-buttons" class="grid grid-cols-4 justify-center gap-5 py-10">
+          <li class="flex justify-center">
+            <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
+              <span class="color-span w-9 h-9 rounded-xl bg-[#8434E1]"></span>
+              <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Purple</p>
+            </button>
+          </li>
+          <li class="flex justify-center">
+            <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
+              <span class="color-span w-9 h-9 rounded-xl bg-black"></span>
+              <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Black</p>
+            </button>
+          </li>
+          <li class="flex justify-center">
+            <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
+              <span class="color-span w-9 h-9 rounded-xl bg-[#F35528]"></span>
+              <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Red</p>
+            </button>
+          </li>
+          <li class="flex justify-center">
+            <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
+              <span class="color-span w-9 h-9 rounded-xl bg-[#F16F2B]"></span>
+              <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Orange</p>
+            </button>
+          </li>
+          <li class="flex justify-center">
+            <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
+              <span class="color-span w-9 h-9 rounded-xl bg-[#345EFF]"></span>
+              <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Navy</p>
+            </button>
+          </li>
+          <li class="flex justify-center">
+            <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
+              <span class="color-span w-9 h-9 rounded-xl bg-white border"></span>
+              <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">White</p>
+            </button>
+          </li>
+          <li class="flex justify-center">
+            <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
+              <span class="color-span w-9 h-9 rounded-xl bg-[#D67E3B]"></span>
+              <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Broom</p>
+            </button>
+          </li>
+          <li class="flex justify-center">
+            <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
+              <span class="color-span w-9 h-9 rounded-xl bg-[#48BC4E]"></span>
+              <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Green</p>
+            </button>
+          </li>
+          <li class="flex justify-center">
+            <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
+              <span class="color-span w-9 h-9 rounded-xl bg-[#FDC761]"></span>
+              <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Yellow</p>
+            </button>
+          </li>
+          <li class="flex justify-center">
+            <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
+              <span class="color-span w-9 h-9 rounded-xl bg-[#E4E5E8]"></span>
+              <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Grey</p>
+            </button>
+          </li>
+          <li class="flex justify-center">
+            <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
+              <span class="color-span w-9 h-9 rounded-xl bg-[#E08D9D]"></span>
+              <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Pink</p>
+            </button>
+          </li>
+          <li class="flex justify-center">
+            <button class="color-button flex flex-col gap-4 w-full justify-center items-center">
+              <span class="color-span w-9 h-9 rounded-xl bg-[#3FDEFF]"></span>
+              <p class="text-[#8A8989] font-sans font-semibold text-sm leading-5">Blue</p>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div id="open_range" class="flex items-center justify-between border-b px-8 py-5 cursor-pointer">
+        <h3 class="text-[#807D7E] font-sans font-semibold text-2xl leading-7">Size</h3>
+        <button id="button_range" class="text-[#8A8989] button_rotate rotate-0 transition-all">
+          <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="double__slider-box px-8  h-0 overflow-hidden transition-all">
+        <ul id="size-buttons" class="grid grid-cols-3 gap-5 py-10">
+          <li
+            class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">
+            XXS</li>
+          <li
+            class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">
+            XL</li>
+          <li
+            class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">
+            XS</li>
+          <li
+            class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">
+            S</li>
+          <li
+            class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">
+            M</li>
+          <li
+            class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">
+            L</li>
+          <li
+            class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">
+            XXL</li>
+          <li
+            class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">
+            3XL</li>
+          <li
+            class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">
+            4XL</li>
+        </ul>
+      </div>
+
+      <div id="open_range" class="flex items-center justify-between border-b px-8 py-5 cursor-pointer">
+        <h3 class="text-[#807D7E] font-sans font-semibold text-2xl leading-7">Dress Style</h3>
+        <button id="button_range" class="text-[#8A8989] button_rotate transition-all">
+          <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 11.7415L5.73782 7.00373C6.08739 6.65416 6.08739 6.08739 5.73782 5.73782L1 1"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="double__slider-box px-8  h-0 overflow-hidden transition-all">
+        <ul id="size-buttons" class="grid grid-cols-2 gap-5 py-10">
+          <li
+            class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">
+            Long</li>
+          <li
+            class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">
+            Short</li>
+          <li
+            class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">
+            Tight</li>
+          <li
+            class="size-option cursor-pointer py-[6px] px-4 border border-[#BEBCBD] rounded-lg text-center text-[#3C4242] font-sans font-semibold text-sm leading-5">
+            Wide</li>
+        </ul>
+      </div>
+       </div>
       </aside>
 
 
